@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BuildWithAD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="page-content">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BuildWith</span>
+                <span class="logo-ai">AD</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Our Portfolio</h1>
+                <p class="page-subtitle">Showcasing innovative AI solutions that transform businesses</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-agents">AI Agents</button>
+                <button class="filter-btn" data-filter="ai-apps">AI Applications</button>
+                <button class="filter-btn" data-filter="ai-games">AI Games</button>
+                <button class="filter-btn" data-filter="chatbots">Chatbots</button>
+                <button class="filter-btn" data-filter="game-dev">Game Development</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- AI Agent Projects -->
+                <div class="project-card" data-category="ai-agents">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/00d4ff/ffffff?text=AI+Agent" alt="AI Agent Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Intelligent Trading Agent</h3>
+                        <p>AI-powered trading system that analyzes market data and executes trades autonomously with advanced risk management.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Financial AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai-agents">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/7b2cbf/ffffff?text=Smart+Assistant" alt="Smart Assistant">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Enterprise AI Assistant</h3>
+                        <p>Intelligent assistant that automates business processes, manages schedules, and provides data insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Application Projects -->
+                <div class="project-card" data-category="ai-apps">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/ff006e/ffffff?text=AI+App" alt="AI Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Powered Analytics Platform</h3>
+                        <p>Comprehensive analytics platform that uses AI to process and visualize complex business data.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai-apps">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/ff6b35/ffffff?text=Mobile+AI" alt="Mobile AI App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Health Monitor</h3>
+                        <p>Mobile application that uses AI to monitor health metrics and provide personalized recommendations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">TensorFlow Lite</span>
+                            <span class="tag">Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Game Projects -->
+                <div class="project-card" data-category="ai-games">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/00ff88/000000?text=AI+Game" alt="AI Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Neural Quest</h3>
+                        <p>Adventure game featuring AI-driven NPCs that adapt to player behavior and create unique storylines.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">AI NPCs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ai-games">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/ff00ff/ffffff?text=Strategy+AI" alt="Strategy AI Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Strategy Commander</h3>
+                        <p>Real-time strategy game with intelligent AI opponents that learn and adapt to player strategies.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Strategy AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chatbot Projects -->
+                <div class="project-card" data-category="chatbots">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/00ffff/000000?text=Chatbot" alt="AI Chatbot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Support Bot</h3>
+                        <p>Intelligent chatbot that handles customer inquiries, provides support, and escalates complex issues.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Dialogflow</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="chatbots">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/ffff00/000000?text=Virtual+Assistant" alt="Virtual Assistant">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Virtual Assistant</h3>
+                        <p>Personal virtual assistant that manages tasks, schedules, and provides intelligent responses.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">Voice AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Development Projects -->
+                <div class="project-card" data-category="game-dev">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/ff8800/ffffff?text=Mobile+Game" alt="Mobile Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Puzzle Quest Mobile</h3>
+                        <p>Cross-platform puzzle game with engaging mechanics and social features for mobile devices.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="game-dev">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/8800ff/ffffff?text=PC+Game" alt="PC Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cyberpunk RPG</h3>
+                        <p>Immersive role-playing game set in a futuristic cyberpunk world with branching storylines.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">RPG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="game-dev">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/00ff00/000000?text=VR+Game" alt="VR Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Virtual Reality Adventure</h3>
+                        <p>Immersive VR experience that transports players to fantastical worlds with interactive environments.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity VR</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Virtual Reality</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="game-dev">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/ff0080/ffffff?text=Console+Game" alt="Console Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Racing Simulator</h3>
+                        <p>High-performance racing game with realistic physics and stunning graphics for next-gen consoles.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Racing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="portfolio-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's create something amazing together with cutting-edge AI technology</p>
+                <a href="contact.html" class="btn btn-primary">
+                    <span>Start Project</span>
+                    <i class="fas fa-rocket"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">BuildWith</span>
+                        <span class="logo-ai">AD</span>
+                    </div>
+                    <p>Pioneering the future of AI-driven solutions for businesses worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#ai-agents">AI Agents</a></li>
+                        <li><a href="services.html#ai-apps">AI Applications</a></li>
+                        <li><a href="services.html#ai-games">AI Games</a></li>
+                        <li><a href="services.html#chatbots">Chatbots</a></li>
+                        <li><a href="services.html#game-dev">Game Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@BuildWithad.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Silicon Valley, CA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BuildWithAD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
