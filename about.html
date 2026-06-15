@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Adeel Ahmad and BuildWithAD — AEM, Shopify developer, AI product builder.">
+  <meta name="description" content="About Adeel Ahmad — Associate Engineering Manager, founder of BuildWithAD. Shopify expert, full-stack engineer, product builder.">
   <title>About — BuildWithAD</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="index.html" class="logo">BuildWith<span>AD</span></a>
+      <a href="index.html" class="logo"><span class="logo-mark">AD</span> BuildWith<span>AD</span></a>
       <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="demo.html" class="nav-demo">Demo</a>
         <a href="about.html" class="active">About</a>
         <a href="contact.html" class="nav-cta">Start a project</a>
       </nav>
@@ -30,63 +31,73 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="section-label">About</p>
-        <h1>Built by an engineer who still ships code</h1>
-        <p>BuildWithAD is the client-facing brand of Adeel Ahmad — Associate Engineering Manager in Pakistan, building for global clients in USD.</p>
+        <div class="section-label">About</div>
+        <h1>Hi, I'm Adeel Ahmad</h1>
+        <p>Associate Engineering Manager by day, solo engineering studio by night. I build Shopify stores for global brands and ship my own products — from health tech to AI game tools.</p>
       </div>
     </section>
 
-    <section>
+    <section style="padding-top:0;">
       <div class="container about-grid">
-        <div>
-          <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 1rem;">The story</h2>
-          <p style="color: var(--muted); margin-bottom: 1rem;">
-            I started with Shopify stores for international clients — jewelry, fashion, wellness, health brands across the US, UK, and Europe. That grew into full-stack product work: web apps, mobile, and AI features clients actually use.
+        <div class="about-intro">
+          <p>
+            I'm a full-stack engineer based in Pakistan, working remotely with clients in the US, UK, Germany, Netherlands, and France. Over the past several years I've delivered 24+ Shopify and e-commerce projects — custom themes, full store builds, and performance work for jewelry, wellness, fashion, and health brands.
           </p>
-          <p style="color: var(--muted); margin-bottom: 1rem;">
-            By day I lead engineering at ARVO, driving agentic SDLC and vibe-coded product delivery. By night I ship my own products — GlycoRange (diabetes tracker), GDDforge (AI game design docs), and Life Hub (personal business OS).
+          <p>
+            By day I lead engineering at ARVO, where I focus on agentic software delivery and helping teams ship faster with AI-assisted development. BuildWithAD is my client-facing studio — one person, direct communication, production-quality code.
           </p>
-          <p style="color: var(--muted);">
-            BuildWithAD is where client work happens: honest timelines, senior execution, no outsourcing bait-and-switch. You work directly with me.
+          <p>
+            Beyond client work, I'm building a portfolio of products: <strong>GlycoRange</strong> (a live diabetes tracker at glycorange.com), <strong>GDDforge</strong> and <strong>Playforge</strong> (AI game design tools), <strong>Life Hub</strong> (a personal business OS), and ventures in derma/beauty and education CMS with partners.
           </p>
+          <p>
+            I believe in honest scoping, fixed milestones, and shipping — not endless discovery phases. If I take your project, you'll work directly with me from first call to launch.
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:0.5rem;">Work with me</a>
         </div>
         <div class="about-card">
-          <h3>Adeel Ahmad</h3>
-          <p style="color: var(--accent); font-size: 0.9rem; margin-bottom: 1rem;">Associate Engineering Manager · Founder, BuildWithAD</p>
-          <ul class="feature-list">
-            <li><i class="fas fa-map-marker-alt"></i><span>Pakistan · Remote worldwide</span></li>
-            <li><i class="fas fa-envelope"></i><span><a href="mailto:i.am.adeelee@gmail.com" style="color: var(--accent);">i.am.adeelee@gmail.com</a></span></li>
-            <li><i class="fab fa-linkedin"></i><span><a href="https://www.linkedin.com/in/adeelahmad" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">LinkedIn</a></span></li>
-            <li><i class="fab fa-github"></i><span><a href="https://github.com/legiongamerz007" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">GitHub</a></span></li>
-          </ul>
+          <h3>Quick facts</h3>
+          <div class="about-facts">
+            <div class="about-fact"><i class="fas fa-briefcase"></i><span>Associate Engineering Manager at ARVO</span></div>
+            <div class="about-fact"><i class="fas fa-map-marker-alt"></i><span>Pakistan · available remote worldwide</span></div>
+            <div class="about-fact"><i class="fas fa-shopify"></i><span>24+ Shopify projects · 14 live stores</span></div>
+            <div class="about-fact"><i class="fas fa-rocket"></i><span>6 products & ventures in pipeline</span></div>
+            <div class="about-fact"><i class="fas fa-code"></i><span>Next.js · React Native · TypeScript · AI</span></div>
+            <div class="about-fact"><i class="fab fa-linkedin-in"></i><span><a href="https://www.linkedin.com/in/adeelahmad" target="_blank" rel="noopener" style="color:var(--accent);">linkedin.com/in/adeelahmad</a></span></div>
+          </div>
         </div>
       </div>
 
       <div class="container values-grid">
         <div class="value-item">
           <h4>Ship, don't slide</h4>
-          <p>Weekly demos. Working software over polished decks.</p>
+          <p>Working software beats perfect decks. I scope in milestones and deliver staging links every week.</p>
         </div>
         <div class="value-item">
-          <h4>Direct communication</h4>
-          <p>WhatsApp, Slack, or email — you talk to the person writing code.</p>
+          <h4>Direct & honest</h4>
+          <p>No account managers. If something isn't a good fit or timeline is unrealistic, I'll tell you upfront.</p>
         </div>
         <div class="value-item">
-          <h4>Honest scope</h4>
-          <p>Fixed quotes where possible. No surprise invoices.</p>
+          <h4>Full ownership</h4>
+          <p>Design, build, deploy, and handoff — one engineer accountable for the entire delivery.</p>
         </div>
-        <div class="value-item">
-          <h4>Modern stack</h4>
-          <p>Shopify, Next.js, React Native, AI APIs — maintained, not legacy.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-label">Ventures</div>
+          <h2>Products I'm building alongside client work</h2>
         </div>
+        <div class="products-grid" id="home-products"></div>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="container">
         <div class="cta-box">
-          <h2>Let's work together</h2>
-          <p>Shopify project, app MVP, or AI integration — tell me what you need.</p>
+          <h2>Let's build something together</h2>
+          <p>Whether it's a Shopify store, a SaaS MVP, or an AI integration — I'd like to hear about it.</p>
           <a href="contact.html" class="btn btn-primary">Get in touch</a>
         </div>
       </div>
@@ -95,12 +106,13 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom" style="border: none; padding-top: 0;">
+      <div class="footer-bottom" style="border:none;padding:0;">
         <span>© 2026 BuildWithAD · Adeel Ahmad</span>
-        <a href="index.html" class="link-arrow">Back to home</a>
+        <a href="index.html">Home</a>
       </div>
     </div>
   </footer>
+  <script src="site-data.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

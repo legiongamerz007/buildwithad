@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BuildWithAD portfolio — 24+ Shopify stores and themes for global brands.">
+  <meta name="description" content="BuildWithAD portfolio — 24+ Shopify stores and e-commerce projects for global brands.">
   <title>Portfolio — BuildWithAD</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="index.html" class="logo">BuildWith<span>AD</span></a>
+      <a href="index.html" class="logo"><span class="logo-mark">AD</span> BuildWith<span>AD</span></a>
       <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="demo.html" class="nav-demo">Demo</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="nav-cta">Start a project</a>
       </nav>
@@ -30,38 +31,29 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="section-label">Portfolio</p>
-        <h1>24+ Shopify stores & product builds</h1>
-        <p>Real client work across jewelry, fashion, wellness, health, and retail — plus our own AI products.</p>
+        <div class="section-label">Portfolio</div>
+        <h1>24+ e-commerce projects for global brands</h1>
+        <p>Live Shopify stores and custom themes across jewelry, wellness, fashion, health tech, and retail. Click any live store to visit it.</p>
       </div>
     </section>
 
-    <section style="padding-top: 1rem;">
+    <section style="padding-top:0;">
       <div class="container">
         <div class="filter-bar">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="shopify-store">Live stores</button>
-          <button class="filter-btn" data-filter="shopify-theme">Themes & builds</button>
-          <button class="filter-btn" data-filter="ai-apps">Web & AI</button>
+          <button class="filter-btn" data-filter="shopify-theme">Custom themes</button>
+          <button class="filter-btn" data-filter="ai-apps">Apps & products</button>
         </div>
-        <div id="portfolio-projects-grid" class="projects-grid"></div>
-      </div>
-    </section>
-
-    <section class="stats-band">
-      <div class="container stats-grid">
-        <div><div class="stat-number" data-target="24">0</div><div class="stat-label">Projects</div></div>
-        <div><div class="stat-number" data-target="14">0</div><div class="stat-label">Live stores</div></div>
-        <div><div class="stat-number" data-target="6">0</div><div class="stat-label">Countries</div></div>
-        <div><div class="stat-number" data-target="98">0</div><div class="stat-label">Satisfaction %</div></div>
+        <div class="projects-grid" id="portfolio-projects-grid"></div>
       </div>
     </section>
 
     <section class="cta-band">
       <div class="container">
         <div class="cta-box">
-          <h2>Want results like these?</h2>
-          <p>Share your store or product idea — we'll scope it honestly.</p>
+          <h2>Want results like these for your brand?</h2>
+          <p>Share your store URL or project brief — I'll respond with a clear plan and timeline.</p>
           <a href="contact.html" class="btn btn-primary">Start a project</a>
         </div>
       </div>
@@ -70,9 +62,9 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom" style="border: none; padding-top: 0;">
-        <span>© 2026 BuildWithAD</span>
-        <a href="contact.html" class="link-arrow">Work with us →</a>
+      <div class="footer-bottom" style="border:none;padding:0;">
+        <span>© 2026 BuildWithAD · Adeel Ahmad</span>
+        <a href="index.html">Back to home</a>
       </div>
     </div>
   </footer>

@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BuildWithAD services — Shopify development, web apps, AI automation, and product MVPs.">
+  <meta name="description" content="BuildWithAD services — Shopify, web & mobile apps, AI automation, games, CMS platforms, and engineering leadership.">
   <title>Services — BuildWithAD</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="index.html" class="logo">BuildWith<span>AD</span></a>
+      <a href="index.html" class="logo"><span class="logo-mark">AD</span> BuildWith<span>AD</span></a>
       <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="services.html" class="active">Services</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="demo.html" class="nav-demo">Demo</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="nav-cta">Start a project</a>
       </nav>
@@ -30,78 +31,128 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="section-label">Services</p>
-        <h1>What we build for clients</h1>
-        <p>Shopify is our bread and butter. AI and custom software are where we differentiate — fast delivery, senior engineering, USD-friendly rates.</p>
+        <div class="section-label">Services</div>
+        <h1>Everything I build — for clients and for myself</h1>
+        <p>From Shopify storefronts that convert to AI agents that save your team hours every week. One engineer, full ownership, no outsourcing chain.</p>
       </div>
     </section>
 
-    <section id="shopify" class="service-block">
+    <section class="service-block" id="shopify">
       <div class="container service-layout">
         <div>
-          <h2>Shopify & E-commerce</h2>
-          <p class="lead">24+ stores across jewelry, fashion, wellness, health, and retail — US, UK, Germany, Netherlands, Pakistan.</p>
+          <h2><i class="fab fa-shopify" style="color:#95bf47;margin-right:0.5rem;"></i> Shopify & E-commerce</h2>
+          <p class="lead">Custom themes, full store builds, and performance optimization for DTC brands selling in the US, UK, EU, and beyond. 24+ projects delivered — jewelry, wellness, fashion, health tech, and home goods.</p>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i><span>Custom theme development & section builds</span></li>
-            <li><i class="fas fa-check"></i><span>Store setup, migration from WooCommerce / custom</span></li>
-            <li><i class="fas fa-check"></i><span>Speed optimization & mobile-first UX</span></li>
-            <li><i class="fas fa-check"></i><span>Product pages, collections, checkout tweaks</span></li>
+            <li><i class="fas fa-check"></i> Custom Liquid themes and section-based designs</li>
+            <li><i class="fas fa-check"></i> Store migration, catalog setup, and checkout tuning</li>
+            <li><i class="fas fa-check"></i> Speed optimization, mobile UX, and SEO foundations</li>
+            <li><i class="fas fa-check"></i> App integrations — reviews, subscriptions, analytics</li>
+            <li><i class="fas fa-check"></i> Ongoing maintenance and A/B-ready layouts</li>
           </ul>
-          <a href="portfolio.html" class="btn btn-primary" style="margin-top: 1.5rem;">See Shopify portfolio</a>
+          <a href="portfolio.html" class="btn btn-secondary" style="margin-top:1.5rem;">View Shopify portfolio</a>
         </div>
         <div class="service-visual">
           <i class="fab fa-shopify"></i>
-          <p>14 live storefronts · 10 theme builds</p>
+          <p>14 live storefronts · 10 custom themes · US · UK · DE · NL · FR</p>
         </div>
       </div>
     </section>
 
-    <section id="web" class="service-block">
+    <section class="service-block" id="web">
       <div class="container service-layout reverse">
         <div>
-          <h2>Web & Mobile Apps</h2>
-          <p class="lead">Production-grade apps with Next.js, React Native, Node, and PostgreSQL — the same stack we use on our own products.</p>
+          <h2>Web & Mobile Applications</h2>
+          <p class="lead">Production-grade web apps and mobile experiences with Next.js, React Native, and robust APIs. From marketing sites to full SaaS platforms with auth, payments, and real-time data.</p>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i><span>Landing pages & marketing sites (like this one)</span></li>
-            <li><i class="fas fa-check"></i><span>SaaS dashboards, admin panels, client portals</span></li>
-            <li><i class="fas fa-check"></i><span>React Native iOS + Android from one codebase</span></li>
-            <li><i class="fas fa-check"></i><span>API design, auth, payments (Stripe, Lemon Squeezy)</span></li>
+            <li><i class="fas fa-check"></i> Next.js dashboards, marketing sites, and PWAs</li>
+            <li><i class="fas fa-check"></i> React Native for iOS and Android (Expo)</li>
+            <li><i class="fas fa-check"></i> REST & GraphQL APIs — Node, PostgreSQL, SQLite</li>
+            <li><i class="fas fa-check"></i> Auth (OAuth, magic links), Stripe, webhooks</li>
+            <li><i class="fas fa-check"></i> Deployed on Vercel, Fly.io, AWS</li>
           </ul>
         </div>
-        <div class="service-visual"><i class="fas fa-laptop-code"></i><p>Next.js · React Native · Fly.io · Vercel</p></div>
+        <div class="service-visual">
+          <i class="fas fa-layer-group"></i>
+          <p>GlycoRange · Life Hub · client dashboards</p>
+        </div>
       </div>
     </section>
 
-    <section id="ai" class="service-block">
+    <section class="service-block" id="ai">
       <div class="container service-layout">
         <div>
-          <h2>AI & Automation</h2>
-          <p class="lead">Practical AI that ships — not slide decks. Built by an AEM who leads agentic delivery at ARVO.</p>
+          <h2>AI & Intelligent Automation</h2>
+          <p class="lead">Practical AI that fits your workflow — not demos that never ship. Custom assistants, document processing, lead automation, and agentic development practices for product teams.</p>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i><span>Custom chatbots & support agents (Groq, OpenAI)</span></li>
-            <li><i class="fas fa-check"></i><span>Document AI — PDF upload, OCR, summarization</span></li>
-            <li><i class="fas fa-check"></i><span>Workflow automation — email, CRM, internal ops</span></li>
-            <li><i class="fas fa-check"></i><span>Agentic SDLC consulting for product teams</span></li>
+            <li><i class="fas fa-check"></i> Custom GPT / Groq assistants with your data</li>
+            <li><i class="fas fa-check"></i> PDF & image analysis — lab reports, invoices, forms</li>
+            <li><i class="fas fa-check"></i> Lead research and outreach automation (ethical APIs)</li>
+            <li><i class="fas fa-check"></i> Agentic SDLC — faster delivery with AI pair programming</li>
+            <li><i class="fas fa-check"></i> Integration with Slack, Gmail, CRMs, and internal tools</li>
           </ul>
         </div>
-        <div class="service-visual"><i class="fas fa-brain"></i><p>Groq · OpenAI · Custom agents</p></div>
+        <div class="service-visual">
+          <i class="fas fa-wand-magic-sparkles"></i>
+          <p>GDDforge · Playforge · ARVO agentic delivery</p>
+        </div>
       </div>
     </section>
 
-    <section id="products" class="service-block">
+    <section class="service-block" id="games">
       <div class="container service-layout reverse">
         <div>
-          <h2>Product MVPs</h2>
-          <p class="lead">We dogfood everything we sell. GlycoRange, GDDforge, Life Hub — we know how to go from idea to live product.</p>
+          <h2>Games & Interactive Experiences</h2>
+          <p class="lead">From game design documents to playable HTML5 prototypes. Ideal for studios validating concepts or brands wanting interactive marketing experiences.</p>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i><span>4–6 week MVP packages with fixed scope</span></li>
-            <li><i class="fas fa-check"></i><span>Health tech, SaaS tools, internal dashboards</span></li>
-            <li><i class="fas fa-check"></i><span>Play Store / App Store submission support</span></li>
-            <li><i class="fas fa-check"></i><span>Post-launch iteration on retainer</span></li>
+            <li><i class="fas fa-check"></i> AI-assisted GDD generation (GDDforge)</li>
+            <li><i class="fas fa-check"></i> GDD → playable MVP in weeks (Playforge)</li>
+            <li><i class="fas fa-check"></i> WebGL, Canvas, and Unity WebGL builds</li>
+            <li><i class="fas fa-check"></i> Instant games and branded interactives</li>
           </ul>
-          <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem;">Discuss your MVP</a>
         </div>
-        <div class="service-visual"><i class="fas fa-rocket"></i><p>GlycoRange · GDDforge · Life Hub</p></div>
+        <div class="service-visual">
+          <i class="fas fa-gamepad"></i>
+          <p>Prototype fast · iterate with AI</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-block" id="cms">
+      <div class="container service-layout">
+        <div>
+          <h2>CMS & B2B Platforms</h2>
+          <p class="lead">School management systems, academy portals, and industry-specific admin dashboards. Built for the Pakistan market with export-ready architecture.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Admissions, classes, fees, and parent portals</li>
+            <li><i class="fas fa-check"></i> Role-based admin with audit trails</li>
+            <li><i class="fas fa-check"></i> White-label for agencies and resellers</li>
+            <li><i class="fas fa-check"></i> Recurring revenue model for B2B sales</li>
+          </ul>
+        </div>
+        <div class="service-visual">
+          <i class="fas fa-school"></i>
+          <p>School / Academy CMS — in development</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-block" id="consulting">
+      <div class="container service-layout reverse">
+        <div>
+          <h2>Engineering Leadership & Delivery</h2>
+          <p class="lead">Hands-on Associate Engineering Manager support — not slide decks. Architecture reviews, MVP scoping, team velocity, and shipping discipline for startups and agencies.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Technical due diligence and stack recommendations</li>
+            <li><i class="fas fa-check"></i> Agentic / AI-assisted delivery models</li>
+            <li><i class="fas fa-check"></i> Fixed-price MVP quotes with clear milestones</li>
+            <li><i class="fas fa-check"></i> Direct access — no account managers in between</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:1.5rem;">Book a discovery call</a>
+        </div>
+        <div class="service-visual">
+          <i class="fas fa-people-group"></i>
+          <p>ARVO · AEM · 8+ years shipping</p>
+        </div>
       </div>
     </section>
 
@@ -109,8 +160,8 @@
       <div class="container">
         <div class="cta-box">
           <h2>Not sure which service fits?</h2>
-          <p>Send a short brief — we'll recommend the right approach and ballpark pricing.</p>
-          <a href="contact.html" class="btn btn-primary">Contact us</a>
+          <p>Describe your project and I'll recommend the right approach — or tell you honestly if I'm not the best fit.</p>
+          <a href="contact.html" class="btn btn-primary">Start a conversation</a>
         </div>
       </div>
     </section>
@@ -120,18 +171,18 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">BuildWith<span>AD</span></a>
-          <p>Shopify, AI, and web development for global clients.</p>
+          <a href="index.html" class="logo"><span class="logo-mark">AD</span> BuildWith<span>AD</span></a>
+          <p>Engineering studio for e-commerce, applications, and AI.</p>
           <div class="social-row">
-            <a href="https://www.linkedin.com/in/adeelahmad" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:i.am.adeelee@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/adeelahmad" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/legiongamerz007" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
           </div>
         </div>
-        <div class="footer-col"><h4>Services</h4><a href="services.html#shopify">Shopify</a><a href="services.html#web">Web</a><a href="services.html#ai">AI</a></div>
-        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a></div>
-        <div class="footer-col"><h4>Email</h4><a href="mailto:i.am.adeelee@gmail.com">i.am.adeelee@gmail.com</a></div>
+        <div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>More</h4><a href="demo.html">3D Demo</a><a href="about.html">About</a></div>
+        <div class="footer-col"><h4>Contact</h4><a href="mailto:i.am.adeelee@gmail.com">i.am.adeelee@gmail.com</a></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 BuildWithAD</span></div>
+      <div class="footer-bottom"><span>© 2026 BuildWithAD</span><span>Pakistan · Remote</span></div>
     </div>
   </footer>
   <script src="main.js"></script>

@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact BuildWithAD for Shopify, web app, and AI development projects.">
+  <meta name="description" content="Contact BuildWithAD — start your Shopify, web app, or AI project with Adeel Ahmad.">
   <title>Contact — BuildWithAD</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="index.html" class="logo">BuildWith<span>AD</span></a>
+      <a href="index.html" class="logo"><span class="logo-mark">AD</span> BuildWith<span>AD</span></a>
       <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
+        <a href="demo.html" class="nav-demo">Demo</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="nav-cta active">Start a project</a>
       </nav>
@@ -30,13 +31,13 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="section-label">Contact</p>
+        <div class="section-label">Contact</div>
         <h1>Start a project</h1>
-        <p>Shopify store, web app, or AI feature — send a short brief and we'll reply within 24 hours (PKT business days).</p>
+        <p>Tell me what you're building. I typically reply within 24 hours with next steps or a few clarifying questions.</p>
       </div>
     </section>
 
-    <section style="padding-top: 2rem;">
+    <section style="padding-top:0;">
       <div class="container contact-grid">
         <div>
           <div class="contact-card">
@@ -45,45 +46,45 @@
           </div>
           <div class="contact-card">
             <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/in/adeelahmad" target="_blank" rel="noopener noreferrer">linkedin.com/in/adeelahmad</a>
+            <a href="https://www.linkedin.com/in/adeelahmad" target="_blank" rel="noopener">linkedin.com/in/adeelahmad</a>
           </div>
           <div class="contact-card">
             <h4>Location</h4>
-            <p style="color: var(--muted);">Pakistan · Remote worldwide</p>
-            <p style="color: var(--dim); font-size: 0.85rem; margin-top: 0.35rem;">Overlapping hours with US, UK & EU</p>
+            <p>Pakistan · working remotely with US, UK, EU clients</p>
           </div>
           <div class="contact-card">
-            <h4>Typical projects</h4>
-            <p style="color: var(--muted); font-size: 0.9rem;">Shopify theme · Store setup · Next.js MVP · React Native app · AI chatbot · Retainer support</p>
+            <h4>Availability</h4>
+            <p>Taking new projects · Shopify, web/mobile, AI automation</p>
           </div>
         </div>
 
         <form class="contact-form" id="contactForm">
-          <h3 style="margin-bottom: 1.25rem; font-family: var(--font-display);">Send a message</h3>
           <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith">
           </div>
           <div class="form-group">
-            <label for="email">Email *</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="you@company.com">
           </div>
           <div class="form-group">
-            <label for="service">Project type</label>
+            <label for="service">What do you need?</label>
             <select id="service" name="service">
-              <option value="shopify">Shopify / E-commerce</option>
-              <option value="web">Web or mobile app</option>
-              <option value="ai">AI / automation</option>
-              <option value="mvp">Product MVP</option>
-              <option value="other">Other</option>
+              <option value="Shopify / E-commerce">Shopify / E-commerce</option>
+              <option value="Web or Mobile App">Web or Mobile App</option>
+              <option value="AI & Automation">AI & Automation</option>
+              <option value="Games / Interactive">Games / Interactive</option>
+              <option value="CMS / B2B Platform">CMS / B2B Platform</option>
+              <option value="Consulting / Leadership">Consulting / Leadership</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Tell us about the project *</label>
+            <label for="message">Project details</label>
             <textarea id="message" name="message" required placeholder="What are you building? Timeline? Budget range?"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Send via email <i class="fas fa-paper-plane"></i></button>
-          <p class="form-note">Opens your email app with a pre-filled message — no data stored on our servers.</p>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send message <i class="fas fa-paper-plane"></i></button>
+          <p class="form-note">Opens your email app with a pre-filled message. No data is stored on this site.</p>
         </form>
       </div>
     </section>
@@ -91,12 +92,13 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom" style="border: none; padding-top: 0;">
+      <div class="footer-bottom" style="border:none;padding:0;">
         <span>© 2026 BuildWithAD</span>
-        <span>i.am.adeelee@gmail.com</span>
+        <a href="index.html">Home</a>
       </div>
     </div>
   </footer>
+  <script src="site-data.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
