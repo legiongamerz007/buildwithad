@@ -969,17 +969,19 @@ section { padding: 5.5rem 0; }
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .demo-overlay p {
   font-size: 0.9rem;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
 }
 
 .demo-hint {
   margin-top: 0.75rem;
   font-size: 0.78rem;
-  color: var(--dim);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 /* Footer */
