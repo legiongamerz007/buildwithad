@@ -194,9 +194,11 @@
   const tmp = new THREE.Vector3();
 
   function setPointer(clientX, clientY) {
-    target.x = (clientX / window.innerWidth) * 2 - 1;
-    // Screen Y: down = negative NDC (standard Three.js)
-    target.y = -(clientY / window.innerHeight) * 2 + 1;
+    const nx = (clientX / window.innerWidth) * 2 - 1;
+    const ny = (clientY / window.innerHeight) * 2 - 1;
+    // Invert both axes so movement matches screen (camera faces -Z, face on +Z)
+    target.x = -nx;
+    target.y = -ny;
   }
 
   window.addEventListener("mousemove", (e) => setPointer(e.clientX, e.clientY));
