@@ -154,6 +154,8 @@ function animate() {
 
 // Enhanced Portfolio Filtering with animations
 function initPortfolioFilter() {
+    if (document.getElementById('portfolio-projects-grid')) return;
+
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
     
@@ -222,8 +224,13 @@ function initFAQ() {
     });
 }
 
+let statsAnimated = false;
+
 // Enhanced Stats Counter with smooth animation
 function animateStats() {
+    if (statsAnimated) return;
+    statsAnimated = true;
+
     const statNumbers = document.querySelectorAll('.stat-number');
     
     statNumbers.forEach(stat => {
@@ -633,9 +640,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('resize', handleResize);
     
-    // Trigger stats animation when in viewport
-    const statsSection = document.querySelector('.stats');
-    if (statsSection) {
+    // Trigger stats animation when any stats section enters viewport
+    document.querySelectorAll('.stats, .portfolio-stats').forEach((statsSection) => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -643,9 +649,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     observer.unobserve(entry.target);
                 }
             });
-        });
+        }, { threshold: 0.2 });
         observer.observe(statsSection);
-    }
+    });
 });
 
 // Add CSS for enhanced animations
