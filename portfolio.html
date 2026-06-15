@@ -1,144 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BuildWithAD portfolio — 24+ Shopify stores and themes for US, UK, EU, and Pakistan clients.">
-    <title>Portfolio - BuildWithAD</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BuildWithAD portfolio — 24+ Shopify stores and themes for global brands.">
+  <title>Portfolio — BuildWithAD</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-content">
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">BuildWith</span>
-                <span class="logo-ai">AD</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">BuildWith<span>AD</span></a>
+      <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Start a project</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
     <section class="page-hero">
-        <div class="container">
-            <div class="page-hero-content">
-                <h1 class="page-title">Shopify & AI Portfolio</h1>
-                <p class="page-subtitle">24+ live Shopify stores and custom themes — plus modern web & AI products</p>
-            </div>
-        </div>
+      <div class="container">
+        <p class="section-label">Portfolio</p>
+        <h1>24+ Shopify stores & product builds</h1>
+        <p>Real client work across jewelry, fashion, wellness, health, and retail — plus our own AI products.</p>
+      </div>
     </section>
 
-    <section class="portfolio-filter">
-        <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="shopify-store">Live Stores</button>
-                <button class="filter-btn" data-filter="shopify-theme">Themes & Builds</button>
-                <button class="filter-btn" data-filter="ai-apps">Web & AI Apps</button>
-            </div>
+    <section style="padding-top: 1rem;">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="shopify-store">Live stores</button>
+          <button class="filter-btn" data-filter="shopify-theme">Themes & builds</button>
+          <button class="filter-btn" data-filter="ai-apps">Web & AI</button>
         </div>
+        <div id="portfolio-projects-grid" class="projects-grid"></div>
+      </div>
     </section>
 
-    <section class="portfolio-grid">
-        <div class="container">
-            <div id="portfolio-projects-grid" class="projects-grid"></div>
-        </div>
+    <section class="stats-band">
+      <div class="container stats-grid">
+        <div><div class="stat-number" data-target="24">0</div><div class="stat-label">Projects</div></div>
+        <div><div class="stat-number" data-target="14">0</div><div class="stat-label">Live stores</div></div>
+        <div><div class="stat-number" data-target="6">0</div><div class="stat-label">Countries</div></div>
+        <div><div class="stat-number" data-target="98">0</div><div class="stat-label">Satisfaction %</div></div>
+      </div>
     </section>
 
-    <section class="portfolio-stats stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="24">24</div>
-                    <div class="stat-label">Shopify Projects</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="14">14</div>
-                    <div class="stat-label">Live Storefronts</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="6">6</div>
-                    <div class="stat-label">Countries Served</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="98">98</div>
-                    <div class="stat-label">Client Satisfaction %</div>
-                </div>
-            </div>
+    <section class="cta-band">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Want results like these?</h2>
+          <p>Share your store or product idea — we'll scope it honestly.</p>
+          <a href="contact.html" class="btn btn-primary">Start a project</a>
         </div>
+      </div>
     </section>
+  </main>
 
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need a Shopify store or AI-powered product?</h2>
-                <p>From theme customization to full e-commerce builds and modern web apps</p>
-                <a href="contact.html" class="btn btn-primary">
-                    <span>Start a Project</span>
-                    <i class="fas fa-rocket"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <span>© 2026 BuildWithAD</span>
+        <a href="contact.html" class="link-arrow">Work with us →</a>
+      </div>
+    </div>
+  </footer>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <span class="logo-text">BuildWith</span><span class="logo-ai">AD</span>
-                    </div>
-                    <p>Shopify, AI agents, and web apps — built for global clients from Pakistan.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/adeelahmad" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/legiongamerz007" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html#shopify">Shopify Stores</a></li>
-                        <li><a href="services.html#ai-agents">AI Agents</a></li>
-                        <li><a href="services.html#ai-apps">Web Applications</a></li>
-                        <li><a href="services.html#chatbots">Chatbots</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> i.am.adeelee@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Pakistan · Remote worldwide</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 BuildWithAD. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="portfolio-data.js"></script>
-    <script src="portfolio.js"></script>
-    <script src="script.js"></script>
+  <script src="portfolio-data.js"></script>
+  <script src="portfolio.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
