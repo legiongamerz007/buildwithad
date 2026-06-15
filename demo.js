@@ -45,10 +45,7 @@
 
   const mascot = new THREE.Group();
   scene.add(mascot);
-
-  // Helper: Three.js lookAt points -Z at target; we want +Z (the face) toward target
-  const rotHelper = new THREE.Object3D();
-  const mascotPos = new THREE.Vector3();
+  mascot.rotation.order = "YXZ";
 
   // Soft glow halo
   const halo = new THREE.Mesh(
@@ -190,15 +187,13 @@
 
   const mouse = { x: 0, y: 0 };
   const target = { x: 0, y: 0 };
-  const lookPoint = new THREE.Vector3();
-  const tmp = new THREE.Vector3();
 
   function setPointer(clientX, clientY) {
     const nx = (clientX / window.innerWidth) * 2 - 1;
-    const ny = (clientY / window.innerHeight) * 2 - 1;
-    // Invert both axes so movement matches screen (camera faces -Z, face on +Z)
+    // Standard screen Y → NDC (+1 at top of screen)
+    const ny = 1 - (clientY / window.innerHeight) * 2;
     target.x = -nx;
-    target.y = -ny;
+    target.y = ny;
   }
 
   window.addEventListener("mousemove", (e) => setPointer(e.clientX, e.clientY));
@@ -206,31 +201,21 @@
     if (e.touches[0]) setPointer(e.touches[0].clientX, e.touches[0].clientY);
   }, { passive: true });
 
-  /** Convert NDC mouse to a 3D point the mascot should look at */
-  function getLookTarget() {
-    tmp.set(mouse.x, mouse.y, 0.5).unproject(camera);
-    const dir = tmp.sub(camera.position).normalize();
-    return camera.position.clone().add(dir.multiplyScalar(10));
-  }
-
-  function aimPupil(eyeSocket, pupil, iris, worldTarget) {
-    const local = eyeSocket.worldToLocal(worldTarget.clone());
+  function aimPupil(pupil, iris) {
     const max = 0.09;
-    const nx = THREE.MathUtils.clamp(local.x * 0.12, -max, max);
-    const ny = THREE.MathUtils.clamp(local.y * 0.12, -max, max);
-    pupil.position.set(nx, ny, 0.28);
-    iris.position.set(nx * 0.6, ny * 0.6, 0.18);
+    const px = THREE.MathUtils.clamp(mouse.x * 0.1, -max, max);
+    const py = THREE.MathUtils.clamp(-mouse.y * 0.08, -max, max);
+    pupil.position.set(px, py, 0.28);
+    iris.position.set(px * 0.6, py * 0.6, 0.18);
   }
 
   const clock = new THREE.Clock();
   camera.lookAt(0, 0, 0);
 
-  function aimHeadAt(worldTarget) {
-    mascotPos.set(0, mascot.position.y, 0);
-    rotHelper.position.copy(mascotPos);
-    rotHelper.lookAt(worldTarget);
-    rotHelper.rotateY(Math.PI);
-    mascot.quaternion.slerp(rotHelper.quaternion, 0.12);
+  function aimHead() {
+    mascot.rotation.y = mouse.x * 0.72;
+    mascot.rotation.x = THREE.MathUtils.clamp(-mouse.y * 0.48, -0.52, 0.52);
+    mascot.rotation.z = 0;
   }
 
   function animate() {
@@ -240,14 +225,11 @@
     mouse.x += (target.x - mouse.x) * 0.1;
     mouse.y += (target.y - mouse.y) * 0.1;
 
-    lookPoint.copy(getLookTarget());
     mascot.position.y = Math.sin(t * 1.2) * 0.12;
+    aimHead();
 
-    aimHeadAt(lookPoint);
-    mascot.updateMatrixWorld(true);
-
-    aimPupil(eyeL.socket, eyeL.pupil, eyeL.iris, lookPoint);
-    aimPupil(eyeR.socket, eyeR.pupil, eyeR.iris, lookPoint);
+    aimPupil(eyeL.pupil, eyeL.iris);
+    aimPupil(eyeR.pupil, eyeR.iris);
 
     halo.scale.setScalar(1 + Math.sin(t * 2) * 0.04);
     body.material.emissiveIntensity = 0.22 + Math.sin(t * 1.5) * 0.08;
