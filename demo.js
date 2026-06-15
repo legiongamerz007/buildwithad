@@ -44,12 +44,11 @@
   });
 
   const mascot = new THREE.Group();
-  const facePivot = new THREE.Group();
-  facePivot.add(mascot);
-  scene.add(facePivot);
+  scene.add(mascot);
 
-  // Eyes sit on +Z; pivot lookAt uses -Z toward target, so flip mascot 180°
-  mascot.rotation.y = Math.PI;
+  // Helper: Three.js lookAt points -Z at target; we want +Z (the face) toward target
+  const rotHelper = new THREE.Object3D();
+  const mascotPos = new THREE.Vector3();
 
   // Soft glow halo
   const halo = new THREE.Mesh(
@@ -222,6 +221,15 @@
   }
 
   const clock = new THREE.Clock();
+  camera.lookAt(0, 0, 0);
+
+  function aimHeadAt(worldTarget) {
+    mascotPos.set(0, mascot.position.y, 0);
+    rotHelper.position.copy(mascotPos);
+    rotHelper.lookAt(worldTarget);
+    rotHelper.rotateY(Math.PI);
+    mascot.quaternion.slerp(rotHelper.quaternion, 0.12);
+  }
 
   function animate() {
     requestAnimationFrame(animate);
@@ -231,17 +239,10 @@
     mouse.y += (target.y - mouse.y) * 0.1;
 
     lookPoint.copy(getLookTarget());
+    mascot.position.y = Math.sin(t * 1.2) * 0.12;
 
-    // Head follows cursor via lookAt (correct Y — no inversion)
-    tmp.copy(lookPoint);
-    tmp.y += 0.1;
-    facePivot.lookAt(tmp);
-
-    // Keep tilt natural
-    facePivot.rotation.x = THREE.MathUtils.clamp(facePivot.rotation.x, -0.45, 0.45);
-    facePivot.rotation.z = THREE.MathUtils.clamp(facePivot.rotation.z, -0.2, 0.2);
-
-    facePivot.position.y = Math.sin(t * 1.2) * 0.12;
+    aimHeadAt(lookPoint);
+    mascot.updateMatrixWorld(true);
 
     aimPupil(eyeL.socket, eyeL.pupil, eyeL.iris, lookPoint);
     aimPupil(eyeR.socket, eyeR.pupil, eyeR.iris, lookPoint);
