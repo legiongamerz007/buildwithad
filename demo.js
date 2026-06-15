@@ -189,11 +189,8 @@
   const target = { x: 0, y: 0 };
 
   function setPointer(clientX, clientY) {
-    const nx = (clientX / window.innerWidth) * 2 - 1;
-    // Standard screen Y → NDC (+1 at top of screen)
-    const ny = 1 - (clientY / window.innerHeight) * 2;
-    target.x = -nx;
-    target.y = ny;
+    target.x = (clientX / window.innerWidth) * 2 - 1;
+    target.y = 1 - (clientY / window.innerHeight) * 2;
   }
 
   window.addEventListener("mousemove", (e) => setPointer(e.clientX, e.clientY));
