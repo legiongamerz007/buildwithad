@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Mascot from "./components/Mascot";
 import { SITE, CLIENT_SERVICES, OWN_PRODUCTS, TECH_STACK } from "./data/siteData";
+import { LINKEDIN_PROFILE } from "./data/linkedinProfile";
 import { PORTFOLIO_PROJECTS, CATEGORY_LABELS } from "./data/portfolioData";
 import {
   ShoppingBag,
@@ -184,17 +185,16 @@ export default function App() {
                 <div className="lg:col-span-7 text-left space-y-6 z-10">
                   <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-pink/10 border border-brand-pink/20 text-brand-pink text-xs font-semibold animate-pulse">
                     <span className="w-2 h-2 rounded-full bg-green-400"></span>
-                    <span>Available for Remote Projects · Global Delivery</span>
+                    <span>{LINKEDIN_PROFILE.headline} · Lahore · Remote worldwide</span>
                   </div>
                   
                   <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                    We engineer <em className="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink via-brand-purple to-brand-cyan not-italic">stores, apps,</em> and AI products
+                    Engineering leader who <em className="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink via-brand-purple to-brand-cyan not-italic">ships</em> stores, apps & EdTech
                   </h1>
                   
                   <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl font-light">
-                    BuildWithAD is a boutique engineering studio with agency-grade output. 
-                    24+ Shopify launches for global brands, custom SaaS dashboards, HTML5 games, and smart AI agents — 
-                    built directly by an Associate Engineering Manager.
+                    {SITE.founder} — {LINKEDIN_PROFILE.summaryShort} By night, BuildWithAD delivers 24+ Shopify stores,
+                    custom SaaS, AI automation, and game prototypes for global clients.
                   </p>
 
                   <div className="flex flex-wrap gap-4 pt-4">
@@ -223,16 +223,16 @@ export default function App() {
                   {/* Proof Badges */}
                   <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/5 max-w-md">
                     <div>
-                      <div className="text-3xl font-extrabold text-white">24+</div>
+                      <div className="text-3xl font-extrabold text-white">{LINKEDIN_PROFILE.stats.yearsExperience}</div>
+                      <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Years Experience</div>
+                    </div>
+                    <div>
+                      <div className="text-3xl font-extrabold text-white">{LINKEDIN_PROFILE.stats.shopifyProjects}</div>
                       <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Shopify Builds</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-extrabold text-white">14</div>
+                      <div className="text-3xl font-extrabold text-white">{LINKEDIN_PROFILE.stats.liveStores}</div>
                       <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">Live Stores</div>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-extrabold text-white">6</div>
-                      <div className="text-xs text-gray-400 uppercase tracking-widest mt-1">In-house Products</div>
                     </div>
                   </div>
                 </div>
@@ -340,20 +340,20 @@ export default function App() {
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                   <div className="space-y-1">
-                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">24+</div>
+                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">{LINKEDIN_PROFILE.stats.shopifyProjects}</div>
                     <div className="text-xs uppercase tracking-widest text-gray-400">Stores Shipped</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">14</div>
-                    <div className="text-xs uppercase tracking-widest text-gray-400">Live Custom Domains</div>
+                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">{LINKEDIN_PROFILE.stats.yearsExperience}</div>
+                    <div className="text-xs uppercase tracking-widest text-gray-400">Years in Software</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">6</div>
-                    <div className="text-xs uppercase tracking-widest text-gray-400">Regions Served</div>
+                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">{LINKEDIN_PROFILE.stats.teamSizeLed}</div>
+                    <div className="text-xs uppercase tracking-widest text-gray-400">Engineers Led</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">8+</div>
-                    <div className="text-xs uppercase tracking-widest text-gray-400">Years Shipping Code</div>
+                    <div className="text-4xl sm:text-5xl font-extrabold font-heading text-white">{LINKEDIN_PROFILE.stats.gamesIntegrated}</div>
+                    <div className="text-xs uppercase tracking-widest text-gray-400">Games Integrated</div>
                   </div>
                 </div>
               </div>
@@ -673,38 +673,133 @@ export default function App() {
 
         {/* ==================== ABOUT VIEW ==================== */}
         {activeTab === "about" && (
-          <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 text-left">
+          <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 text-left">
             <div className="text-center space-y-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">Our Story</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">LinkedIn profile</span>
               <h1 className="text-4xl sm:text-5xl font-heading font-extrabold tracking-tight">
-                About Adeel Ahmad
+                {LINKEDIN_PROFILE.fullName}
               </h1>
-              <p className="text-gray-400 text-lg font-light max-w-xl mx-auto">
-                Associate Engineering Manager & Full-stack dev shipping clean storefronts and tools.
+              <p className="text-brand-cyan text-lg font-medium">{LINKEDIN_PROFILE.headline}</p>
+              <p className="text-gray-400 text-base font-light max-w-2xl mx-auto">
+                {LINKEDIN_PROFILE.location} · {LINKEDIN_PROFILE.industry}
               </p>
             </div>
 
             <div className="glass-card rounded-3xl p-8 md:p-12 space-y-6 font-light leading-relaxed text-gray-300 text-base">
-              <p>
-                I am <strong className="text-white">Adeel Ahmad</strong>, an engineering lead currently based in Pakistan. In my day job, I manage engineering velocity and teams. At night, I run <strong className="text-white">BuildWithAD</strong>, a one-person digital studio with global reach.
-              </p>
-              <p>
-                Over the past 8+ years, I have written theme architectures and Liquid files for over 24 Shopify stores, built bespoke Next.js systems, and automated pipelines with OpenAI.
-              </p>
-              <p>
-                My methodology is rooted in **shipping velocity**. By writing modular code and testing in-house products, I ensure that the code shipped for clients is robust, SEO-ready, and conversion-optimized.
-              </p>
-              
+              {LINKEDIN_PROFILE.summary.split("\n\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-white/5">
                 <div className="flex items-center space-x-3">
-                  <MapPin size={20} className="text-brand-pink" />
-                  <span>Pakistan · Serving clients globally</span>
+                  <MapPin size={20} className="text-brand-pink flex-shrink-0" />
+                  <span>{LINKEDIN_PROFILE.location}</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail size={20} className="text-brand-cyan" />
+                  <Mail size={20} className="text-brand-cyan flex-shrink-0" />
                   <a href={`mailto:${SITE.email}`} className="hover:text-brand-cyan">{SITE.email}</a>
                 </div>
+                <div className="flex items-center space-x-3">
+                  <Linkedin size={20} className="text-brand-purple flex-shrink-0" />
+                  <a href={SITE.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-brand-purple">
+                    linkedin.com/in/iadeelahmad
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Clock size={20} className="text-brand-green flex-shrink-0" />
+                  <span>{LINKEDIN_PROFILE.stats.yearsExperience} years · BSc CS, GCU Lahore</span>
+                </div>
               </div>
+            </div>
+
+            {/* Experience */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-heading font-bold text-white">Experience</h2>
+              <div className="space-y-4">
+                {LINKEDIN_PROFILE.experience.map((job, i) => (
+                  <div key={i} className="glass-card rounded-2xl p-6 md:p-8 space-y-3">
+                    <div className="flex flex-wrap items-start justify-between gap-2">
+                      <div>
+                        <h3 className="text-lg font-bold text-white">{job.role}</h3>
+                        <p className="text-brand-pink text-sm font-medium">{job.company}</p>
+                      </div>
+                      <span className="text-xs text-gray-500 font-mono whitespace-nowrap">{job.period}</span>
+                    </div>
+                    <ul className="space-y-2">
+                      {job.highlights.map((h, j) => (
+                        <li key={j} className="flex items-start space-x-2 text-sm text-gray-400">
+                          <CheckCircle2 size={14} className="text-brand-purple mt-0.5 flex-shrink-0" />
+                          <span>{h}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Key projects */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-heading font-bold text-white">Key projects</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {LINKEDIN_PROFILE.keyProjects.map((proj, i) => (
+                  <div key={i} className="glass-card rounded-2xl p-6 space-y-3">
+                    <div>
+                      <h3 className="font-bold text-white">{proj.name}</h3>
+                      <p className="text-xs text-brand-cyan">{proj.org}</p>
+                    </div>
+                    <p className="text-sm text-gray-400 font-light">{proj.desc}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {proj.tags.map((tag) => (
+                        <span key={tag} className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-white/5 text-gray-400 border border-white/10">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Education & Skills */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h2 className="text-2xl font-heading font-bold text-white">Education</h2>
+                {LINKEDIN_PROFILE.education.map((edu, i) => (
+                  <div key={i} className="glass-card rounded-2xl p-6">
+                    <h3 className="font-bold text-white">{edu.degree}</h3>
+                    <p className="text-brand-pink text-sm">{edu.school}</p>
+                    <p className="text-xs text-gray-500 mt-1">{edu.period} · {edu.location}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-4">
+                <h2 className="text-2xl font-heading font-bold text-white">Skills</h2>
+                {Object.entries(LINKEDIN_PROFILE.skills).map(([group, items]) => (
+                  <div key={group} className="glass-card rounded-2xl p-6">
+                    <h3 className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-3">{group}</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {items.map((skill) => (
+                        <span key={skill} className="px-2.5 py-1 rounded-lg text-xs bg-white/5 text-gray-300 border border-white/5">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-center pt-4">
+              <a
+                href={SITE.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold transition-all"
+              >
+                <Linkedin size={18} />
+                <span>View full LinkedIn profile</span>
+                <ExternalLink size={14} />
+              </a>
             </div>
           </section>
         )}
@@ -718,8 +813,15 @@ export default function App() {
                 Let's start your project
               </h1>
               <p className="text-gray-400 text-lg font-light">
-                Tell me about your scope, budget, and timeline. I'll get back to you within 24 hours.
+                Tell me about your scope, budget, and timeline. I typically reply within 24 hours.
               </p>
+              <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400 pt-2">
+                <a href={`mailto:${SITE.email}`} className="hover:text-brand-pink">{SITE.email}</a>
+                <span className="text-gray-600">·</span>
+                <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="hover:text-brand-pink">{SITE.phone}</a>
+                <span className="text-gray-600">·</span>
+                <span>{LINKEDIN_PROFILE.location}</span>
+              </div>
             </div>
 
             <div className="glass-card rounded-3xl p-8 md:p-12">
@@ -845,7 +947,7 @@ export default function App() {
                 </span>
               </button>
               <p className="text-gray-400 text-sm font-light max-w-sm leading-relaxed">
-                Engineering studio for e-commerce, applications, and AI — led by Adeel Ahmad. Based in Pakistan, delivering code worldwide.
+                {LINKEDIN_PROFILE.headline} — BuildWithAD is the client-facing studio for Shopify, apps, AI, and games. Based in Lahore, delivering worldwide.
               </p>
               
               <div className="flex space-x-4 pt-2">
@@ -911,8 +1013,8 @@ export default function App() {
           </div>
 
           <div className="border-t border-white/5 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light gap-4">
-            <span>© {new Date().getFullYear()} BuildWithAD · Adeel Ahmad. All rights reserved.</span>
-            <span>Pakistan · Remote Worldwide</span>
+            <span>© {new Date().getFullYear()} BuildWithAD · {SITE.founder}</span>
+            <span>{LINKEDIN_PROFILE.location} · Remote Worldwide</span>
           </div>
         </div>
       </footer>

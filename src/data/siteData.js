@@ -1,25 +1,32 @@
 /** BuildWithAD — site content (services, products, ventures) */
+import { LINKEDIN_PROFILE } from "./linkedinProfile";
+
 export const SITE = {
   brand: "BuildWithAD",
-  founder: "Adeel Ahmad",
-  role: "Associate Engineering Manager · Full-stack engineer",
-  location: "Pakistan",
-  email: "i.am.adeelee@gmail.com",
-  linkedin: "https://www.linkedin.com/in/adeelahmad",
+  founder: LINKEDIN_PROFILE.fullName,
+  role: LINKEDIN_PROFILE.headline,
+  tagline: LINKEDIN_PROFILE.summaryShort,
+  location: LINKEDIN_PROFILE.location,
+  email: LINKEDIN_PROFILE.email,
+  phone: LINKEDIN_PROFILE.phone,
+  linkedin: LINKEDIN_PROFILE.linkedinUrl,
   github: "https://github.com/legiongamerz007",
+  industry: LINKEDIN_PROFILE.industry,
+  employer: "ARVO (Punjab Group)",
 };
 
 export const CLIENT_SERVICES = [
   {
     id: "shopify",
-    icon: "ShoppingBag", // Lucide icon name
+    icon: "ShoppingBag",
     title: "Shopify & E-commerce",
-    summary: "Custom themes, store builds, migrations, and conversion-focused storefronts for DTC brands.",
+    summary:
+      "Custom themes, store builds, and conversion-focused storefronts for DTC brands — 24+ projects shipped for US, UK, EU clients.",
     points: [
       "Theme design & Liquid development",
       "Speed, SEO, and mobile UX",
       "Catalog, checkout, and app integrations",
-      "24+ stores shipped globally"
+      "24+ stores shipped globally",
     ],
     accentColor: "from-[#ff4ecd] to-[#8b5cf6]",
   },
@@ -27,12 +34,13 @@ export const CLIENT_SERVICES = [
     id: "web",
     icon: "Layers",
     title: "Web & Mobile Applications",
-    summary: "Production apps with Next.js, React Native, and APIs — from landing pages to full SaaS.",
+    summary:
+      "Production apps with Next.js, React Native, and APIs — from EdTech platforms to SaaS dashboards and PWAs.",
     points: [
       "Next.js / React dashboards & marketing sites",
       "React Native iOS & Android",
       "Auth, payments, databases at scale",
-      "Deployed on Vercel, Fly.io, AWS"
+      "Deployed on Vercel, Fly.io, AWS",
     ],
     accentColor: "from-[#8b5cf6] to-[#38bdf8]",
   },
@@ -40,25 +48,27 @@ export const CLIENT_SERVICES = [
     id: "ai",
     icon: "Sparkles",
     title: "AI & Intelligent Automation",
-    summary: "Chatbots, document AI, agents, and workflow automation that integrate with your existing tools.",
+    summary:
+      "Chatbots, Jira/SDLC automation, document AI, and workflow agents — built from real internal tooling at ARVO.",
     points: [
       "Custom GPT / Groq-powered assistants",
+      "Jira → tasks, story points, QA automation",
       "PDF & image analysis pipelines",
-      "Lead outreach & CRM automation",
-      "Agentic SDLC for product teams"
+      "Agentic SDLC for product teams",
     ],
     accentColor: "from-[#38bdf8] to-[#34d399]",
   },
   {
     id: "games",
     icon: "Gamepad2",
-    title: "Games & Interactive Experiences",
-    summary: "HTML5 games, playable prototypes, and game-design tooling for studios and brands.",
+    title: "Games & EdTech Experiences",
+    summary:
+      "Unity/HTML5 games, EdTech interactives, and metaverse prototypes — 7+ years in game dev and educational apps.",
     points: [
+      "Unity & Unreal — mobile, AR, multiplayer",
+      "EdTech gamification (AEP, PGC Teacher App)",
       "GDD → playable MVP pipelines",
-      "WebGL / Unity / instant games",
-      "AI-assisted game design docs",
-      "Prototype in weeks, not months"
+      "1,000+ game integrations at scale",
     ],
     accentColor: "from-[#34d399] to-[#fbbf24]",
   },
@@ -66,25 +76,27 @@ export const CLIENT_SERVICES = [
     id: "cms",
     icon: "GraduationCap",
     title: "CMS & B2B Platforms",
-    summary: "School management, academy portals, and industry-specific admin systems.",
+    summary:
+      "School management, academy portals, and enterprise admin systems — built for Pakistan, export-ready.",
     points: [
       "Admissions, fees, parent portals",
       "Role-based admin dashboards",
+      "PGC-scale enterprise rollouts",
       "White-label for agencies",
-      "PK market + export-ready"
     ],
     accentColor: "from-[#fbbf24] to-[#ff4ecd]",
   },
   {
     id: "consulting",
     icon: "Users2",
-    title: "Engineering Leadership & Delivery",
-    summary: "Hands-on AEM support — architecture reviews, team velocity, and shipping discipline.",
+    title: "Engineering Leadership & PMO",
+    summary:
+      "Hands-on AEM/PMO support — delivery planning, team mentoring, architecture reviews, and fixed-price MVPs.",
     points: [
-      "Agentic / vibe-coded delivery models",
+      "Agile delivery & sprint planning",
       "Technical due diligence",
       "MVP scoping & fixed-price quotes",
-      "Direct access — no account managers"
+      "Direct access — no account managers",
     ],
     accentColor: "from-[#ff4ecd] to-[#38bdf8]",
   },
@@ -142,6 +154,16 @@ export const OWN_PRODUCTS = [
 ];
 
 export const TECH_STACK = [
-  "Shopify", "Next.js", "React Native", "TypeScript", "Node.js",
-  "PostgreSQL", "Fly.io", "Vercel", "Groq", "OpenAI", "Expo",
+  "Shopify",
+  "Next.js",
+  "React Native",
+  "Unity",
+  "C#",
+  "TypeScript",
+  "Jira",
+  "Node.js",
+  "Fly.io",
+  "Vercel",
+  "Groq",
+  "OpenAI",
 ];
