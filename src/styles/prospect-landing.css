@@ -1,0 +1,121 @@
+@keyframes prospect-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes prospect-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes prospect-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes prospect-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes prospect-pulse-soft {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.prospect-animate-fade-up {
+  animation: prospect-fade-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.prospect-animate-fade-up-delay-1 {
+  animation: prospect-fade-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+}
+
+.prospect-animate-fade-up-delay-2 {
+  animation: prospect-fade-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.24s both;
+}
+
+.prospect-animate-float {
+  animation: prospect-float 5.5s ease-in-out infinite;
+}
+
+.prospect-animate-scale-in {
+  animation: prospect-scale-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.prospect-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: prospect-marquee 28s linear infinite;
+}
+
+.prospect-hero-mesh {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.prospect-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  animation: prospect-pulse-soft 8s ease-in-out infinite;
+}
+
+.prospect-card-lift {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+.prospect-card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -16px rgba(0, 0, 0, 0.18);
+}
+
+.prospect-img-zoom {
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.prospect-img-zoom:hover {
+  transform: scale(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prospect-animate-float,
+  .prospect-marquee-track,
+  .prospect-blob,
+  .prospect-animate-fade-up,
+  .prospect-animate-fade-up-delay-1,
+  .prospect-animate-fade-up-delay-2,
+  .prospect-animate-scale-in {
+    animation: none;
+  }
+}

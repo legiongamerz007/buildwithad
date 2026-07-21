@@ -106,12 +106,15 @@ export default function ProspectsIndex() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((p) => (
+          {filtered.map((p) => {
+            const accent = p.premium?.theme?.accent ?? "#ff4ecd";
+            return (
             <Link
               key={p.slug}
               to={`/prospects/${p.slug}`}
-              className="glass-card rounded-3xl p-6 flex flex-col justify-between group"
+              className="glass-card rounded-3xl p-6 flex flex-col justify-between group overflow-hidden relative"
             >
+              <div className="absolute top-0 inset-x-0 h-1" style={{ backgroundColor: accent }} />
               <div className="space-y-3">
                 <div className="flex items-center justify-between gap-2">
                   <span className={`px-2.5 py-1 rounded-full text-xs font-semibold border ${NICHE_COLORS[p.niche]}`}>
@@ -122,7 +125,7 @@ export default function ProspectsIndex() {
                     {p.rating} · {p.reviewCount}
                   </span>
                 </div>
-                <h3 className="text-lg font-heading font-bold text-white group-hover:text-brand-pink transition-colors">
+                <h3 className="text-lg font-heading font-bold text-white transition-colors" style={{ ["--hover"]: accent }}>
                   {p.businessName}
                 </h3>
                 <p className="text-sm text-gray-500 flex items-center gap-1">
@@ -133,12 +136,13 @@ export default function ProspectsIndex() {
               </div>
               <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
                 <span className="text-xs text-gray-600 font-mono">P{p.outreachPriority}</span>
-                <span className="text-brand-pink text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span className="text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all" style={{ color: accent }}>
                   View demo <ArrowRight size={14} />
                 </span>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
 
         {filtered.length === 0 && (
