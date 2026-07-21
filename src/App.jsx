@@ -34,7 +34,8 @@ const IconMap = {
   Sparkles,
   Gamepad2,
   GraduationCap,
-  Users2
+  Users2,
+  Monitor
 };
 
 export default function App() {
@@ -127,9 +128,15 @@ export default function App() {
                 {tab.label}
               </button>
             ))}
+            <a
+              href="/prospects"
+              className="px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-all duration-200"
+            >
+              Demos
+            </a>
             <button
               onClick={() => navigateTo("contact")}
-              className="ml-4 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-pink to-brand-purple hover:from-brand-purple hover:to-brand-pink text-white font-semibold text-sm shadow-neon-pink hover:shadow-neon-purple hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              className="ml-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-pink to-brand-purple hover:from-brand-purple hover:to-brand-pink text-white font-semibold text-sm shadow-neon-pink hover:shadow-neon-purple hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
             >
               Start a project
             </button>
@@ -168,6 +175,12 @@ export default function App() {
                 {tab.id === "contact" ? "🚀 " + tab.label : tab.label}
               </button>
             ))}
+            <a
+              href="/prospects"
+              className="block w-full text-left px-4 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-200"
+            >
+              Prospect demos
+            </a>
           </div>
         )}
       </header>
@@ -274,6 +287,55 @@ export default function App() {
                 <span className="text-white hover:text-brand-amber transition-colors cursor-default">HTML5 INTERACTIVES</span>
               </div>
             </div>
+
+            {/* FAST CASH OFFER */}
+            <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="glass-card rounded-3xl p-8 md:p-10 border border-brand-green/20 bg-brand-green/5">
+                <div className="grid lg:grid-cols-12 gap-8 items-center">
+                  <div className="lg:col-span-7 space-y-4">
+                    <span className="text-xs font-bold uppercase tracking-widest text-brand-green">
+                      Fast launch offer
+                    </span>
+                    <h2 className="font-heading text-3xl sm:text-4xl font-extrabold">
+                      3-day website that turns visitors into WhatsApp leads
+                    </h2>
+                    <p className="text-gray-300 leading-relaxed">
+                      Built for clinics, salons, dentists, restaurants, real estate agents, and local businesses
+                      that need a trustworthy mobile site, services page, Google Maps, and inquiry flow without a long agency process.
+                    </p>
+                    <div className="grid sm:grid-cols-2 gap-3 text-sm text-gray-300">
+                      {[
+                        "Mobile landing page",
+                        "Services/pricing section",
+                        "WhatsApp + Google Maps CTA",
+                        "Inquiry/booking form",
+                      ].map((item) => (
+                        <div key={item} className="rounded-xl border border-white/10 bg-black/20 px-4 py-3">
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="lg:col-span-5 rounded-3xl border border-white/10 bg-black/30 p-6 space-y-4">
+                    <div>
+                      <div className="text-sm text-gray-400 uppercase tracking-widest">Starter package</div>
+                      <div className="text-4xl font-heading font-extrabold text-white mt-1">₨75k</div>
+                      <p className="text-sm text-gray-400 mt-2">50% advance. First version in 3-5 days.</p>
+                    </div>
+                    <div className="border-t border-white/10 pt-4">
+                      <div className="text-sm text-gray-400 uppercase tracking-widest">Remote clients</div>
+                      <div className="text-2xl font-heading font-bold text-brand-cyan mt-1">$500+</div>
+                    </div>
+                    <button
+                      onClick={() => navigateTo("contact")}
+                      className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-brand-green to-brand-cyan text-black font-bold hover:scale-[1.02] transition-all duration-300"
+                    >
+                      Book a 10-minute call
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
 
             {/* BENTO GRID SERVICES SECTION */}
             <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -507,6 +569,28 @@ export default function App() {
               <p className="text-gray-400 text-lg font-light">
                 Shopify Plus builds, custom templates, and web apps launched for global DTC clients.
               </p>
+            </div>
+
+            {/* Prospect demos callout */}
+            <div className="rounded-3xl p-8 md:p-10 bg-gradient-to-tr from-brand-pink/15 via-brand-purple/10 to-dark-bg border border-brand-pink/20 relative overflow-hidden">
+              <div className="glow-bg top-0 right-0 opacity-30" />
+              <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div className="space-y-2 max-w-2xl">
+                  <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">Door 1 outreach</span>
+                  <h2 className="text-2xl sm:text-3xl font-heading font-bold text-white">
+                    36 local business preview sites
+                  </h2>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    Personalized clinic, salon & restaurant demos with WhatsApp booking — built before cold outreach to show value first.
+                  </p>
+                </div>
+                <a
+                  href="/prospects"
+                  className="shrink-0 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-pink to-brand-purple text-white font-bold text-sm shadow-neon-pink hover:scale-105 active:scale-95 transition-all inline-flex items-center gap-2"
+                >
+                  Browse demos <ArrowRight size={16} />
+                </a>
+              </div>
             </div>
 
             {/* Filter Tabs */}

@@ -17,6 +17,20 @@ export const SITE = {
 
 export const CLIENT_SERVICES = [
   {
+    id: "lead-website",
+    icon: "Monitor",
+    title: "3-Day WhatsApp Lead Websites",
+    summary:
+      "Fast mobile websites for clinics, salons, dentists, real estate agents, and local businesses that need WhatsApp inquiries quickly.",
+    points: [
+      "Mobile landing page + services/pricing",
+      "WhatsApp CTA, Google Maps, inquiry form",
+      "Launch in 3-5 days",
+      "Starter: ₨75k / remote: $500+",
+    ],
+    accentColor: "from-[#34d399] to-[#38bdf8]",
+  },
+  {
     id: "shopify",
     icon: "ShoppingBag",
     title: "Shopify & E-commerce",
