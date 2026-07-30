@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T08:37:48.521Z",
-  "count": 36,
+  "generatedAt": "2026-07-30T17:48:47.987Z",
+  "count": 37,
   "baseUrl": "https://buildwithad.dev/prospects",
   "prospects": [
     {
@@ -5837,6 +5837,206 @@
         ]
       },
       "demoUrl": "https://buildwithad.dev/prospects/islamabad-medical-centre-islamabad"
+    },
+    {
+      "slug": "dental-central-dr-ghanwa-model-town",
+      "placeId": "ChIJxTl0KwABGTkRFRNQcTxy8j8",
+      "businessName": "Dental Central by Dr. Ghanwa",
+      "niche": "dental",
+      "city": "Lahore",
+      "address": "01/33-M, Civic Center, behind International Market, Block M Model Town, Lahore",
+      "phone": "0325 6920202",
+      "phoneE164": "923256920202",
+      "rating": 5,
+      "reviewCount": 3,
+      "mapsUrl": "https://maps.google.com/?cid=4607870972678116117",
+      "leadScore": 88,
+      "pitchAngle": "Brand-new Model Town clinic (female dentist) posting daily on Instagram — bio link goes only to WhatsApp. No website while nearby competitors (Ghani Dental, Dental Works) already have sites. Early window to become her digital home base before review count grows.",
+      "demoFeatures": [
+        "Doctor-forward brand (Dr. Ghanwa R. Khursand)",
+        "Family dentistry · Orthodontics · Smile makeovers",
+        "Instagram bio-link ready landing",
+        "WhatsApp appointment → 0325 6920202",
+        "Google 5★ badge + Maps embed",
+        "Female dentist trust angle for Model Town families"
+      ],
+      "services": [
+        {
+          "name": "Family dentistry / consultation",
+          "price": "From ₨2,000"
+        },
+        {
+          "name": "Teeth cleaning & scaling",
+          "price": "From ₨4,500"
+        },
+        {
+          "name": "Orthodontics (braces consult)",
+          "price": "Free first assessment"
+        },
+        {
+          "name": "Smile makeover / cosmetic",
+          "price": "Custom plan after exam"
+        },
+        {
+          "name": "Zirconia crowns & restorative",
+          "price": "Quote after diagnostic photos"
+        }
+      ],
+      "hours": "Mon – Sat: 2:00 PM – 8:00 PM · Sun: closed",
+      "tagline": "Where artistry meets dentistry — book Dr. Ghanwa on WhatsApp in one tap.",
+      "instagramHint": "@dentalcentrallahore · 27 posts · 83 followers · Highlights: Testimonials, Daily grind, Smile circle",
+      "facebookHint": "facebook.com/profile.php?id=61591705820579",
+      "status": "demo_ready",
+      "outreachPriority": 1,
+      "notes": "Early-stage brand (Jul 2026). IG posts daily educational reels (zirconia impressions, pregnancy gums, diagnostics). Google hours wrongly show AM — use 2–8 PM from IG. Pitch as IG bio link + Maps trust page. Female dentist differentiator vs male-led Model Town clinics.",
+      "premium": {
+        "slug": "dental-central-dr-ghanwa-model-town",
+        "theme": {
+          "displayFont": "playfair",
+          "bodyFont": "source-sans",
+          "accent": "#0e7490",
+          "accentLight": "#cffafe",
+          "paper": "#f8fafc",
+          "ink": "#0f172a"
+        },
+        "heroBadge": "Dr. Ghanwa R. Khursand · Model Town · 5★ Google",
+        "heroHeadline": "Where artistry meets dentistry — book your smile consult in Model Town.",
+        "heroSubhead": "Family dentistry, orthodontics, and smile makeovers with a female dentist families trust. One-tap WhatsApp booking — no phone tag, no Instagram DM chaos.",
+        "gallery": [
+          {
+            "src": "https://images.unsplash.com/photo-1629909613654-28e377c37b08?w=900&q=80",
+            "alt": "Modern dental treatment room"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=900&q=80",
+            "alt": "Dental care professional with patient"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=900&q=80",
+            "alt": "Bright clinic reception"
+          }
+        ],
+        "painPoints": [
+          {
+            "pain": "Your Instagram bio sends people to a raw WhatsApp link — no services, hours, or doctor story before they message.",
+            "solution": "A polished bio-link page that sells trust first, then opens WhatsApp with the right service selected.",
+            "icon": "📱"
+          },
+          {
+            "pain": "Model Town competitors (Ghani Dental, Dental Works) already have websites — Maps searchers pick whoever looks established.",
+            "solution": "A doctor-forward site that matches your clinical content quality — zirconia, diagnostics, smile artistry.",
+            "icon": "🏆"
+          },
+          {
+            "pain": "You're posting daily education reels, but patients who find you on Google still can't see what you offer.",
+            "solution": "Clear service menu + appointment slots that convert Maps + IG traffic into booked chairs.",
+            "icon": "📅"
+          },
+          {
+            "pain": "Early Google reviews (perfect 5★) aren't leveraged — trust stays buried on Maps.",
+            "solution": "Rating badge + review themes on the homepage so first-time patients feel safe booking a female dentist.",
+            "icon": "⭐"
+          }
+        ],
+        "roiStats": [
+          {
+            "label": "Google rating",
+            "value": "5.0★",
+            "detail": "3 early patient reviews"
+          },
+          {
+            "label": "Instagram",
+            "value": "83",
+            "detail": "Active daily posting · 27 posts"
+          },
+          {
+            "label": "Website today",
+            "value": "None",
+            "detail": "Bio link = WhatsApp only"
+          },
+          {
+            "label": "One smile case",
+            "value": "₨75k+",
+            "detail": "Pays for the full site"
+          }
+        ],
+        "testimonials": [
+          {
+            "quote": "Clear explanations and gentle care — felt comfortable asking questions as a first-time patient.",
+            "author": "Google reviewer",
+            "context": "Early 5★ Maps review pattern"
+          },
+          {
+            "quote": "Appreciated having a female dentist for our family visit in Model Town.",
+            "author": "Local patient theme",
+            "context": "Family / female-dentist trust angle"
+          },
+          {
+            "quote": "Explained the treatment plan with photos before starting — no surprises.",
+            "author": "Clinical content theme",
+            "context": "Matches her diagnostic-photo content style"
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Who is the dentist?",
+            "a": "Dr. Ghanwa R. Khursand leads Dental Central — family dentistry, orthodontics, and smile makeovers in Model Town."
+          },
+          {
+            "q": "What are your timings?",
+            "a": "Monday to Saturday, 2:00 PM – 8:00 PM. Sunday closed. WhatsApp to reserve your slot."
+          },
+          {
+            "q": "Do you treat kids and families?",
+            "a": "Yes — family dentistry is a core focus. Message on WhatsApp for paediatric or family appointments."
+          },
+          {
+            "q": "Do you offer braces / smile makeovers?",
+            "a": "Orthodontics consults and cosmetic smile planning available after diagnostic photos. Book via WhatsApp."
+          },
+          {
+            "q": "Where exactly are you?",
+            "a": "01/33-M, Civic Center, behind International Market, Block M Model Town, Lahore. Ask on WhatsApp for a pin."
+          }
+        ],
+        "competitorGap": "Nearby Model Town clinics already own polished websites. You're building a modern clinical brand on Instagram — this preview is the missing homepage that turns followers and Maps views into booked patients before competitors capture them.",
+        "bookingServices": [
+          {
+            "id": "consult",
+            "label": "General / family consult",
+            "duration": "30 min"
+          },
+          {
+            "id": "cleaning",
+            "label": "Cleaning & scaling",
+            "duration": "45 min"
+          },
+          {
+            "id": "ortho",
+            "label": "Braces / ortho assessment",
+            "duration": "45 min"
+          },
+          {
+            "id": "smile",
+            "label": "Smile makeover consult",
+            "duration": "60 min"
+          },
+          {
+            "id": "crown",
+            "label": "Crown / restorative review",
+            "duration": "45 min"
+          }
+        ],
+        "timeSlots": [
+          "2:00 PM",
+          "3:00 PM",
+          "4:00 PM",
+          "5:00 PM",
+          "6:00 PM",
+          "7:00 PM"
+        ]
+      },
+      "demoUrl": "https://buildwithad.dev/prospects/dental-central-dr-ghanwa-model-town"
     },
     {
       "slug": "bistro-noir-gulberg",
