@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ship Lock Field Manual — Payment Kill-Switch for Freelance Builders</title>
+    <meta
+      name="description"
+      content="Keep Vercel, GitHub, and DNS leverage until you’re paid. Field manual + worksheets for when clients say they don’t know what to do next. Not a generic invoice email pack."
+    />
+    <link rel="canonical" href="https://buildwithad.dev/ship-lock/" />
+    <meta property="og:title" content="Ship Lock — Payment Kill-Switch for Freelance Builders" />
+    <meta
+      property="og:description"
+      content="Access Matrix, change orders, and scripts for unpaid builds. Instant download $19."
+    />
+    <meta property="og:url" content="https://buildwithad.dev/ship-lock/" />
+    <meta property="og:image" content="https://buildwithad.dev/ship-lock/images/cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0c0f14;
+        --text: #e8eaed;
+        --muted: #94a3b8;
+        --gold: #c4a35a;
+        --card: #111827;
+        --border: #1f2937;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "DM Sans", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+      }
+      .glow {
+        pointer-events: none;
+        position: fixed;
+        inset: 0;
+        opacity: 0.5;
+        background:
+          radial-gradient(ellipse 70% 45% at 15% 0%, #1a3028 0%, transparent 55%),
+          radial-gradient(ellipse 50% 35% at 95% 5%, #1e2430 0%, transparent 45%);
+      }
+      header, main { position: relative; z-index: 1; max-width: 42rem; margin: 0 auto; padding: 1.5rem; }
+      header { display: flex; justify-content: space-between; align-items: center; }
+      a { color: inherit; }
+      .nav { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+      .nav:hover { color: #fff; }
+      .btn {
+        display: inline-block;
+        background: var(--gold);
+        color: #111;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 0.4rem;
+        padding: 0.7rem 1.2rem;
+      }
+      .btn:hover { background: #d4b56a; }
+      .btn-ghost {
+        display: inline-block;
+        border: 1px solid #334155;
+        color: var(--text);
+        text-decoration: none;
+        border-radius: 0.4rem;
+        padding: 0.7rem 1.2rem;
+      }
+      img.cover {
+        width: 100%;
+        border-radius: 0.6rem;
+        border: 1px solid var(--border);
+        margin-bottom: 2rem;
+      }
+      .eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 700;
+      }
+      h1 {
+        font-family: "Instrument Serif", Georgia, serif;
+        font-size: clamp(2.4rem, 6vw, 3.2rem);
+        font-weight: 400;
+        margin: 0.5rem 0 0;
+        line-height: 1.1;
+      }
+      .lead { color: var(--muted); font-size: 1.2rem; margin-top: 1rem; }
+      .grid { display: grid; gap: 0.75rem; margin-top: 1rem; }
+      @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+      .card {
+        border: 1px solid var(--border);
+        background: rgba(17, 24, 39, 0.7);
+        border-radius: 0.6rem;
+        padding: 1rem;
+      }
+      .card h3 { margin: 0; color: var(--gold); font-size: 0.9rem; }
+      .card p { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.9rem; }
+      .note {
+        margin-top: 2rem;
+        border: 1px solid var(--border);
+        background: #0f172a;
+        border-radius: 0.6rem;
+        padding: 1.1rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .warn {
+        margin-top: 2rem;
+        border: 1px solid #3f2f1e;
+        background: rgba(26, 21, 16, 0.8);
+        border-radius: 0.6rem;
+        padding: 1.1rem;
+        color: #a8a29e;
+        font-size: 0.9rem;
+      }
+      ul { padding-left: 1.1rem; color: #cbd5e1; }
+      .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Ship Lock Field Manual",
+        "description": "Payment kill-switch field manual for freelance builders. Keep Vercel, GitHub, and DNS leverage until paid.",
+        "brand": { "@type": "Brand", "name": "BuildWithAD" },
+        "image": "https://buildwithad.dev/ship-lock/images/cover.png",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://buildwithad.gumroad.com/l/shiplock",
+          "priceCurrency": "USD",
+          "price": "19.00",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="glow" aria-hidden="true"></div>
+    <header>
+      <a class="nav" href="/">BuildWithAD</a>
+      <a class="btn" href="https://buildwithad.gumroad.com/l/shiplock">Get the Field Manual</a>
+    </header>
+    <main>
+      <img class="cover" src="/ship-lock/images/cover.png" alt="Ship Lock Field Manual cover" width="1024" height="1024" />
+      <p class="eyebrow">Field Manual · Instant download · $19</p>
+      <h1>Ship Lock</h1>
+      <p class="lead">
+        Payment kill-switch for freelance builders who ship sites, CRMs, and AI systems — then get unpaid at handover.
+      </p>
+      <p>
+        Generic “chase your invoice” packs already sell for about $9. They help after you’re already disarmed.
+        Ship Lock starts earlier: <strong>Access Matrix</strong> for Vercel/GitHub/DNS, clauses that move ownership
+        only after money clears, and the exact reply when a client says
+        <strong>“we don’t know what to do next.”</strong>
+      </p>
+      <div class="actions">
+        <a class="btn" href="https://buildwithad.gumroad.com/l/shiplock">Buy on Gumroad — $19</a>
+        <a class="btn-ghost" href="/ship-lock/guide/">Free guide</a>
+      </div>
+
+      <h2 style="margin-top:2.5rem;font-size:1.15rem">Pick your situation</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>About to quote</h3>
+          <p>17 discovery questions + interactive risk scorer + 50% deposit gate.</p>
+        </div>
+        <div class="card">
+          <h3>Mid-project creep</h3>
+          <p>Same-day Change Order dialogues — don’t start unpaid “tiny” features.</p>
+        </div>
+        <div class="card">
+          <h3>Delivered, unpaid</h3>
+          <p>“Don’t know what to do next” → close / paid walkthrough / pause. No repo yet.</p>
+        </div>
+        <div class="card">
+          <h3>Money cleared</h3>
+          <p>Vercel/GitHub/DNS handover runbook — transfer ownership once, in writing.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong style="color:#fff">Not another $9 invoice pack.</strong>
+        RecoverKit/Landolio-style kits chase invoices. Ship Lock is for builders who lose leverage when Vercel, GitHub,
+        and DNS move before payment clears.
+      </div>
+
+      <img
+        class="cover"
+        style="margin-top:2.5rem"
+        src="/ship-lock/images/preview-script.png"
+        alt="Sample kill-switch script card"
+        width="1536"
+        height="1024"
+      />
+
+      <h2 style="margin-top:2rem;font-size:1.15rem">In the zip</h2>
+      <ul>
+        <li><strong style="color:#fff">FIELD-MANUAL.html</strong> — open in browser, print to PDF</li>
+        <li>SCORE.html risk scorer · Access Matrix · Clause pack · Change Order · Script pack · Demand letter · AI prompts</li>
+      </ul>
+
+      <div class="warn">
+        Not legal advice. Templates and process only. Do not sabotage client systems — withhold unfinished transfer and
+        pause work under written terms.
+      </div>
+
+      <p style="margin-top:2rem">
+        <a class="btn" href="https://buildwithad.gumroad.com/l/shiplock">Get Ship Lock Field Manual</a>
+      </p>
+    </main>
+  </body>
+</html>

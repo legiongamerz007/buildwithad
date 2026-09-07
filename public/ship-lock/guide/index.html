@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What to Do When a Freelance Client Won’t Pay (2026 Builder Guide)</title>
+    <meta
+      name="description"
+      content="Step-by-step for web and app freelancers: pause work, keep staging leverage, send the right emails, and handle “we don’t know what to do next” without working for free."
+    />
+    <link rel="canonical" href="https://buildwithad.dev/ship-lock/guide/" />
+    <meta property="og:title" content="What to Do When a Freelance Client Won’t Pay" />
+    <meta
+      property="og:description"
+      content="Freeze the bleed, keep Vercel/GitHub leverage, and escalate without free rebuilds."
+    />
+    <meta property="og:url" content="https://buildwithad.dev/ship-lock/guide/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "DM Sans", system-ui, sans-serif;
+        background: #f7f4ef;
+        color: #1c1917;
+        line-height: 1.6;
+      }
+      header, article { max-width: 40rem; margin: 0 auto; padding: 1.5rem; }
+      header { display: flex; justify-content: space-between; }
+      a { color: #a16207; }
+      .nav { color: #57534e; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+      .eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #a16207;
+        font-weight: 700;
+      }
+      h1 {
+        font-family: "Instrument Serif", Georgia, serif;
+        font-size: clamp(2.2rem, 5vw, 3rem);
+        font-weight: 400;
+        line-height: 1.15;
+        margin: 0.6rem 0 0;
+      }
+      .lead { color: #44403c; font-size: 1.1rem; }
+      .callout {
+        margin: 1.5rem 0;
+        border: 1px solid #d6d3d1;
+        background: #fff;
+        border-radius: 0.5rem;
+        padding: 1.1rem;
+        font-size: 0.95rem;
+        color: #44403c;
+      }
+      h2 { margin-top: 2.2rem; font-size: 1.35rem; }
+      ul { color: #44403c; }
+      .cta {
+        margin-top: 2.5rem;
+        background: #1c1917;
+        color: #fafaf9;
+        border-radius: 0.6rem;
+        padding: 1.4rem;
+      }
+      .cta a {
+        display: inline-block;
+        margin-top: 0.8rem;
+        background: #ca8a04;
+        color: #1c1917;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 0.4rem;
+        padding: 0.65rem 1rem;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I withhold a website until I’m paid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If your agreement says IP and production handover transfer only after full payment, and you still control hosting/repo, pausing handover is enforcing the deal — not sabotage. Put that clause in writing before you start."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Client says they don’t know what to do next. Do I keep building for free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Delivered scope is delivered. Offer: close phase + final invoice, a paid walkthrough, or a formal pause. Confusion after delivery is a new phase, not an open tab on your time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if we never signed a contract?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Email proposals and accepted scopes still matter. Send a clear demand with dates and amounts. For the next job, do not start without deposit + written scope."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are invoice email templates enough?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They help after the invoice is late. Most builder losses happen earlier — when GitHub, Vercel, and admin access move before final payment. Fix leverage first, then escalate emails."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a class="nav" href="/ship-lock/">Ship Lock</a>
+      <a class="nav" href="/">BuildWithAD</a>
+    </header>
+    <article>
+      <p class="eyebrow">Freelance builders · 2026</p>
+      <h1>What to do when a freelance client won’t pay</h1>
+      <p class="lead">
+        Direct answer: stop new work the same day, keep staging and source under your account, send a dated payment
+        deadline, then escalate. Do not “finish a few more features” to win them back — that is how unpaid CRMs get
+        built.
+      </p>
+
+      <div class="callout">
+        <strong>Builder-specific note.</strong> Designers lose files. You lose <em>deploy access</em>. The fix is
+        technical leverage + written rules — not only polite reminders. Full copy-paste kit:
+        <a href="/ship-lock/">Ship Lock</a>.
+      </div>
+
+      <h2>1. Same day — freeze the bleed</h2>
+      <ul>
+        <li>No new commits, no “quick fixes,” no free training calls.</li>
+        <li>Confirm who owns hosting and the repo. If it’s you, leave it that way.</li>
+        <li>Write down: invoice number, amount, due date, what was delivered, staging URL.</li>
+      </ul>
+
+      <h2>2. Day 1–7 — remind, then firm deadline</h2>
+      <p>
+        Day 1: assume oversight. Day 7: one firm date. Offer a payment plan only if they reply with a real date — not
+        vibes. Attach the invoice every time.
+      </p>
+
+      <h2>3. Day 14 — pause work in writing</h2>
+      <p>
+        Send a pause notice: further work and production handover stop until the balance clears. This is the line most
+        builders never draw — and why “we’ll pay when we know next steps” becomes months of silence.
+      </p>
+
+      <h2>4. The phrase that means trouble: “we don’t know what to do next”</h2>
+      <p>
+        After you delivered the agreed scope, that sentence is not a product failure by default. It is a decision point:
+        close and pay, book a paid walkthrough, or pause. Treat it like a change in commercial terms, not a request to
+        keep coding for free.
+      </p>
+
+      <h2>5. Prevent the next unpaid build</h2>
+      <ul>
+        <li>50% deposit before kickoff — non-negotiable for new clients.</li>
+        <li>IP and production transfer only after full payment.</li>
+        <li>Two revision rounds max; everything else is a Change Order.</li>
+        <li>Staging on your account until money clears.</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <h3>Can I withhold a website until I’m paid?</h3>
+      <p>
+        If your agreement says IP and production handover transfer only after full payment, and you still control
+        hosting/repo, pausing handover is enforcing the deal — not sabotage. Put that clause in writing before you start.
+      </p>
+      <h3>Client says they don’t know what to do next. Do I keep building for free?</h3>
+      <p>
+        No. Delivered scope is delivered. Offer: close phase + final invoice, a paid walkthrough, or a formal pause.
+      </p>
+      <h3>What if we never signed a contract?</h3>
+      <p>
+        Email proposals and accepted scopes still matter. Send a clear demand with dates and amounts. For the next job,
+        do not start without deposit + written scope.
+      </p>
+      <h3>Are invoice email templates enough?</h3>
+      <p>
+        They help after the invoice is late. Most builder losses happen earlier — when GitHub, Vercel, and admin access
+        move before final payment.
+      </p>
+
+      <div class="cta">
+        <h2 style="margin:0;font-size:1.2rem;color:#fff">Get the full kill-switch pack</h2>
+        <p style="margin:0.5rem 0 0;color:#a8a29e;font-size:0.9rem">
+          Ship Lock: discovery questions, clauses, change order, dialogues, handover runbook, demand letter. Launch
+          price $19.
+        </p>
+        <a href="https://buildwithad.gumroad.com/l/shiplock">Download Ship Lock</a>
+      </div>
+    </article>
+  </body>
+</html>

@@ -118,6 +118,14 @@ export const CLIENT_SERVICES = [
 
 export const OWN_PRODUCTS = [
   {
+    name: "Ship Lock",
+    tag: "Live · $19",
+    tagClass: "bg-green-500/10 text-green-400 border-green-500/30",
+    desc: "Payment kill-switch field manual for freelance builders — Vercel/GitHub/DNS leverage until paid.",
+    url: "/ship-lock/",
+    stack: "Gumroad · Field Manual",
+  },
+  {
     name: "GlycoRange",
     tag: "Live",
     tagClass: "bg-green-500/10 text-green-400 border-green-500/30",

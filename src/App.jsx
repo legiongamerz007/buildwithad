@@ -129,6 +129,12 @@ export default function App() {
               </button>
             ))}
             <a
+              href="/ship-lock/"
+              className="px-4 py-2 rounded-lg text-sm font-medium text-emerald-300/90 hover:text-white hover:bg-white/5 transition-all duration-200"
+            >
+              Ship Lock
+            </a>
+            <a
               href="/prospects"
               className="px-4 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-white/5 transition-all duration-200"
             >
@@ -175,6 +181,12 @@ export default function App() {
                 {tab.id === "contact" ? "🚀 " + tab.label : tab.label}
               </button>
             ))}
+            <a
+              href="/ship-lock/"
+              className="block w-full text-left px-4 py-3 rounded-xl text-base font-semibold text-emerald-300 hover:text-white hover:bg-white/5 transition-all duration-200"
+            >
+              Ship Lock — $19
+            </a>
             <a
               href="/prospects"
               className="block w-full text-left px-4 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-200"
@@ -452,11 +464,11 @@ export default function App() {
                       {prod.url ? (
                         <a
                           href={prod.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target={prod.url.startsWith("http") ? "_blank" : undefined}
+                          rel={prod.url.startsWith("http") ? "noopener noreferrer" : undefined}
                           className="text-brand-cyan hover:text-white flex items-center space-x-1 text-xs font-semibold transition-colors duration-200"
                         >
-                          <span>Visit Live</span>
+                          <span>{prod.url.startsWith("/") ? "Open" : "Visit Live"}</span>
                           <ExternalLink size={12} />
                         </a>
                       ) : (
