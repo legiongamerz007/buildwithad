@@ -1,4 +1,4 @@
-const img = (name) => `/giltlane/${name}`;
+const img = (name) => `/assets/giltlane/${name}`;
 
 export const INTENTS = [
   {

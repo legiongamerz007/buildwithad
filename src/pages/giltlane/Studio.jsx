@@ -46,7 +46,7 @@ export default function GiltlaneStudio() {
             </div>
             <div className="relative">
               <img
-                src="/giltlane/giltlane-results-desk.jpg"
+                src="/assets/giltlane/giltlane-results-desk.jpg"
                 alt=""
                 className="w-full aspect-[4/5] sm:aspect-[16/14] object-cover"
               />
@@ -174,7 +174,7 @@ export default function GiltlaneStudio() {
       </section>
 
       <section className="max-w-6xl mx-auto px-5 sm:px-8 py-16 grid lg:grid-cols-2 gap-10 items-center">
-        <img src="/giltlane/giltlane-instagram-hand.jpg" alt="" className="w-full aspect-[16/10] object-cover" />
+        <img src="/assets/giltlane/giltlane-instagram-hand.jpg" alt="" className="w-full aspect-[16/10] object-cover" />
         <div>
           <h2 className="uk-display text-3xl sm:text-4xl">Ready when you are.</h2>
           <p className="text-[var(--uk-muted)] mt-4 leading-relaxed">

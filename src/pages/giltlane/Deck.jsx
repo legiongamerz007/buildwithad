@@ -8,7 +8,7 @@ const SLIDES = [
   {
     cover: true,
     dark: true,
-    image: "/giltlane/giltlane-results-desk.jpg",
+    image: "/assets/giltlane/giltlane-results-desk.jpg",
     kicker: BRAND.name,
     title: "We don't post.\nWe move numbers.",
     body: "Instagram handled. Leads in the inbox. Every social channel run properly. For clinics, brands, coaches, and consultancies — anywhere.",
@@ -41,7 +41,7 @@ const SLIDES = [
       { value: "2.1k → 6.8k", label: "followers · beauty brand model" },
       { value: "400 → 2.4k", label: "avg reach/post" },
     ],
-    image: "/giltlane/giltlane-instagram-hand.jpg",
+    image: "/assets/giltlane/giltlane-instagram-hand.jpg",
   },
   {
     kicker: "Leads",
@@ -56,7 +56,7 @@ const SLIDES = [
       { value: "3 → 11", label: "qualified intros/mo · consultant model" },
       { value: "48h → 2h", label: "avg first reply" },
     ],
-    image: "/giltlane/giltlane-results-desk.jpg",
+    image: "/assets/giltlane/giltlane-results-desk.jpg",
   },
   {
     kicker: "Full social",
@@ -67,7 +67,7 @@ const SLIDES = [
       "Brand kit + escalation path for complaints",
       "Monthly strategy call — next month planned, not guessed",
     ],
-    image: "/giltlane/giltlane-reels-set.jpg",
+    image: "/assets/giltlane/giltlane-reels-set.jpg",
   },
   {
     dark: true,
@@ -75,7 +75,7 @@ const SLIDES = [
     title: "Gulf clinic · illustrative 90-day model",
     metrics: CASE_RESULTS[0].metrics,
     body: CASE_RESULTS[0].did,
-    image: "/giltlane/giltlane-clinic-alt.jpg",
+    image: "/assets/giltlane/giltlane-clinic-alt.jpg",
     aside: PROOF_LINE,
   },
   {
@@ -83,14 +83,14 @@ const SLIDES = [
     title: "Online brand · illustrative growth model",
     metrics: CASE_RESULTS[1].metrics,
     body: CASE_RESULTS[1].did,
-    image: "/giltlane/giltlane-audience-alt.jpg",
+    image: "/assets/giltlane/giltlane-audience-alt.jpg",
   },
   {
     kicker: "Case · professional services",
     title: "Remote consultant · illustrative retainer",
     metrics: CASE_RESULTS[2].metrics,
     body: CASE_RESULTS[2].did,
-    image: "/giltlane/giltlane-london-consultant.jpg",
+    image: "/assets/giltlane/giltlane-london-consultant.jpg",
   },
   {
     dark: true,
@@ -102,7 +102,7 @@ const SLIDES = [
       "Pipeline with roles, campuses, student portal",
       "AI first line + human takeover",
     ],
-    image: "/giltlane/giltlane-education-ops.jpg",
+    image: "/assets/giltlane/giltlane-education-ops.jpg",
   },
   {
     kicker: "Process",
@@ -127,7 +127,7 @@ const SLIDES = [
   {
     cover: true,
     dark: true,
-    image: "/giltlane/giltlane-story-light.jpg",
+    image: "/assets/giltlane/giltlane-story-light.jpg",
     kicker: "Next",
     title: "Send your handle.\nWe send the audit.",
     body: `${BRAND.email} · buildwithad.dev/giltlane · 50% to start`,

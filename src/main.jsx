@@ -19,10 +19,15 @@ createRoot(document.getElementById("root")).render(
         <Route path="/prospects" element={<ProspectsIndex />} />
         <Route path="/prospects/:slug" element={<ProspectLandingRoute />} />
         <Route path="/giltlane" element={<GiltlaneStudio />} />
+        <Route path="/giltlane/" element={<GiltlaneStudio />} />
         <Route path="/giltlane/deck" element={<GiltlaneDeck />} />
+        <Route path="/giltlane/deck/" element={<GiltlaneDeck />} />
         <Route path="/giltlane/sizzle" element={<GiltlaneSizzle />} />
+        <Route path="/giltlane/sizzle/" element={<GiltlaneSizzle />} />
         <Route path="/giltlane/one-pager" element={<GiltlaneOnePager />} />
+        <Route path="/giltlane/one-pager/" element={<GiltlaneOnePager />} />
         <Route path="/giltlane/work/education-crm" element={<GiltlaneWork />} />
+        <Route path="/giltlane/work/education-crm/" element={<GiltlaneWork />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

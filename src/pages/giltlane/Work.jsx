@@ -59,7 +59,7 @@ export default function GiltlaneWork() {
       </article>
 
       <img
-        src="/giltlane/giltlane-education-ops.jpg"
+        src="/assets/giltlane/giltlane-education-ops.jpg"
         alt=""
         className="w-full max-w-6xl mx-auto px-5 sm:px-8 aspect-[16/8] object-cover"
       />
@@ -82,8 +82,8 @@ export default function GiltlaneWork() {
       </section>
 
       <section className="max-w-6xl mx-auto px-5 sm:px-8 pb-4 grid sm:grid-cols-2 gap-4">
-        <img src="/giltlane/giltlane-crm-ops.jpg" alt="" className="w-full aspect-[16/10] object-cover" />
-        <img src="/giltlane/giltlane-enquiry-desk.jpg" alt="" className="w-full aspect-[16/10] object-cover" />
+        <img src="/assets/giltlane/giltlane-crm-ops.jpg" alt="" className="w-full aspect-[16/10] object-cover" />
+        <img src="/assets/giltlane/giltlane-enquiry-desk.jpg" alt="" className="w-full aspect-[16/10] object-cover" />
       </section>
 
       <section className="max-w-3xl mx-auto px-5 sm:px-8 py-14">

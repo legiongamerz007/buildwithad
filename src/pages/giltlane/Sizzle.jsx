@@ -6,49 +6,49 @@ import "../../giltlane/giltlane.css";
 
 const SCENES = [
   {
-    image: "/giltlane/giltlane-results-desk.jpg",
+    image: "/assets/giltlane/giltlane-results-desk.jpg",
     kicker: BRAND.name,
     line: "We don't post. We move numbers.",
     stat: "+340% reach · illustrative model",
   },
   {
-    image: "/giltlane/giltlane-instagram-hand.jpg",
+    image: "/assets/giltlane/giltlane-instagram-hand.jpg",
     kicker: INTENTS[0].title,
     line: "Grid, Reels, Stories, captions, DMs — planned, designed, scheduled, reported.",
     stat: "2.1k → 6.8k followers · example",
   },
   {
-    image: "/giltlane/giltlane-results-desk.jpg",
+    image: "/assets/giltlane/giltlane-results-desk.jpg",
     kicker: INTENTS[1].title,
     line: "Content that sends people to WhatsApp, a form, or a calendar — not into the void.",
     stat: "3 → 11 intros/mo · example",
   },
   {
-    image: "/giltlane/giltlane-reels-set.jpg",
+    image: "/assets/giltlane/giltlane-reels-set.jpg",
     kicker: INTENTS[2].title,
     line: "Instagram, LinkedIn, Facebook, WhatsApp — one voice, one desk.",
     stat: "12–16 posts/mo · one calendar",
   },
   {
-    image: "/giltlane/giltlane-clinic-alt.jpg",
+    image: "/assets/giltlane/giltlane-clinic-alt.jpg",
     kicker: CASE_RESULTS[0].vertical,
     line: "9 → 31 WhatsApp enquiries. Starting fees on the page, not in DMs.",
     stat: CASE_RESULTS[0].region,
   },
   {
-    image: "/giltlane/giltlane-audience-alt.jpg",
+    image: "/assets/giltlane/giltlane-audience-alt.jpg",
     kicker: CASE_RESULTS[1].vertical,
     line: "4.2k → 11k followers. UGC + education carousels + shoppable Stories.",
     stat: CASE_RESULTS[1].region,
   },
   {
-    image: "/giltlane/giltlane-education-ops.jpg",
+    image: "/assets/giltlane/giltlane-education-ops.jpg",
     kicker: "Real system",
     line: "Education CRM + WhatsApp AI — pipeline, broadcasts, counsellor desk. Shipped.",
     stat: "Production · unnamed client",
   },
   {
-    image: "/giltlane/giltlane-story-light.jpg",
+    image: "/assets/giltlane/giltlane-story-light.jpg",
     kicker: "Start",
     line: "Send your handle. We send the audit. 50% to start.",
     stat: BRAND.email,
